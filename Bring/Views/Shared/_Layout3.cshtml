@@ -1,0 +1,626 @@
+﻿@{
+    Layout = null;
+}
+
+
+<!doctype html>
+<html class="fixed sidebar-left-collapsed">
+<head>
+
+    <!-- Basic -->
+    <meta charset="UTF-8">
+
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- Web Fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
+    <link href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="~/Template2/HTML/assets/vendor/bootstrap/css/bootstrap.css" />
+
+    <link rel="stylesheet" href="~/Template2/HTML/assets/vendor/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="~/Template2/HTML/assets/vendor/magnific-popup/magnific-popup.css" />
+    <link rel="stylesheet" href="~/Template2/HTML/assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.css" />
+
+    <!-- Specific Page Vendor CSS -->
+    <link rel="stylesheet" href="~/Template2/HTML/assets/vendor/pnotify/pnotify.custom.css" />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="~/Template2/HTML/assets/stylesheets/theme.css" />
+
+    <!-- Skin CSS -->
+    <link rel="stylesheet" href="~/Template2/HTML/assets/stylesheets/skins/default.css" />
+
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="~/Template2/HTML/assets/stylesheets/theme-custom.css">
+
+    <!-- Head Libs -->
+    <script src="~/Template2/HTML/assets/vendor/modernizr/modernizr.js"></script>
+</head>
+
+
+<body>
+    <section class="body">
+
+        <!-- start: header -->
+        <header class="header">
+            <div class="logo-container">
+                <a href="../1.7.0" class="logo">
+                    <img src="~/Template2/HTML/assets/images/45-Converted.png" width="101" height="57" alt="logo" style="height: 57px; width: 101px; margin-top: -10px;" />
+
+                </a>
+                <div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
+                    <i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+                </div>
+            </div>
+
+            <!-- start: search & user box -->
+            <div class="header-right">
+
+                <form action="pages-search-results.html" class="search nav-form">
+                    <div class="input-group input-search">
+
+                    </div>
+                </form>
+
+
+
+                <span class="separator"></span>
+
+                <div id="userbox" class="userbox">
+                    <a href="#" data-toggle="dropdown">
+                        <figure class="profile-picture">
+                            <img src="assets/images/!logged-user.jpg" alt="Joseph Doe" class="img-circle" data-lock-picture="assets/images/!logged-user.jpg" />
+                        </figure>
+                        <div class="profile-info" data-lock-name="Name" data-lock-email="Email@email.com">
+                            <span class="name">Vendor Name</span>
+                            <span class="role">administrator</span>
+                        </div>
+
+                        <!---
+                        <i class="fa custom-caret"></i>
+                        -->
+                    </a>
+
+                    <div class="dropdown-menu">
+                        <ul class="list-unstyled">
+                            <li class="divider"></li>
+                            <li>
+                                <a role="menuitem" tabindex="-1" href="pages-user-profile.html"><i class="fa fa-user"></i> My Profile</a>
+                            </li>
+                            <li>
+                                <a role="menuitem" tabindex="-1" href="#" data-lock-screen="true"><i class="fa fa-lock"></i> Lock Screen</a>
+                            </li>
+                            <li>
+                                <a role="menuitem" tabindex="-1" href="pages-signin.html"><i class="fa fa-power-off"></i> Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end: search & user box -->
+        </header>
+        <!-- end: header -->
+
+        <div class="inner-wrapper">
+            <!-- start: sidebar -->
+            <aside id="sidebar-left" class="sidebar-left">
+
+                <div class="sidebar-header">
+                    <div class="sidebar-title">
+                        Product Index
+                    </div>
+                    <div class="sidebar-toggle hidden-xs" data-toggle-class="sidebar-left-collapsed" data-target="html" data-fire-event="sidebar-left-toggle">
+                        <i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+                    </div>
+                </div>
+
+                <div class="nano">
+                    <div class="nano-content">
+                        <nav id="menu" class="nav-main" role="navigation">
+
+                            <ul class="nav nav-main">
+
+                                <li class="nav-nav">
+                                    <a href="@Url.Action("UserDetails","AdminPanel")">
+                                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+                                        <span>User Details</span>
+                                    </a>
+
+                                </li>
+                                <li class="nav-nav">
+                                    <a href="@Url.Action("ProductDetails","AdminPanel")">
+                                        <i class="fa fa-money" aria-hidden="true"></i>
+                                        <span>Product Details</span>
+                                    </a>
+
+                                </li>
+                                <li class="nav-parent">
+                                    <a href="@Url.Action("VendorDetails","AdminPanel")">
+                                        <i class="fa fa-users" aria-hidden="true"></i>
+                                        <span>Vendor Details</span>
+                                    </a>
+                                    @*<ul class="nav nav-children">
+                                            <li>
+                                                <a href="ui-elements-typography.html">
+                                                    View Profile
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="ui-elements-typography.html">
+                                                    Edit Profile
+                                                </a>
+                                            </li>
+
+
+
+                                        </ul>*@
+                                </li>
+                                <li class="nav-nav">
+                                    <a href="@Url.Action("OrdersDetail","AdminPanel")">
+                                        <i class="fa fa-copy" aria-hidden="true"></i>
+                                        <span>Order Details</span>
+                                    </a>
+
+
+                            </ul>
+                        </nav>
+
+                        <hr class="separator" />
+
+                        <div class="sidebar-widget widget-tasks">
+                            <!-- <div class="widget-header">
+                                    <h6>Projects</h6>
+                                    <div class="widget-toggle">+</div>
+                                </div>
+                                <div class="widget-content">
+                                    <ul class="list-unstyled m-none">
+                                        <li><a href="#">Porto HTML5 Template</a></li>
+                                        <li><a href="#">Tucson Template</a></li>
+                                        <li><a href="#">Porto Admin</a></li>
+                                    </ul>
+                                </div>
+                            -->
+                        </div>
+
+                        <hr class="separator" />
+
+                        <div class="sidebar-widget widget-stats">
+                            <!--  <div class="widget-header">
+                                    <h6>Company Stats</h6>
+                                    <div class="widget-toggle">+</div>
+                                </div>
+                                <div class="widget-content">
+                                    <ul>
+                                        <li>
+                                            <span class="stats-title">Stat 1</span>
+                                            <span class="stats-complete">85%</span>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-primary progress-without-number" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+                                                    <span class="sr-only">85% Complete</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="stats-title">Stat 2</span>
+                                            <span class="stats-complete">70%</span>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-primary progress-without-number" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                                    <span class="sr-only">70% Complete</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="stats-title">Stat 3</span>
+                                            <span class="stats-complete">2%</span>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-primary progress-without-number" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="width: 2%;">
+                                                    <span class="sr-only">2% Complete</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            -->
+                        </div>
+                    </div>
+
+                    <script>
+                        // Maintain Scroll Position
+                        if (typeof localStorage !== 'undefined') {
+                            if (localStorage.getItem('sidebar-left-position') !== null) {
+                                var initialPosition = localStorage.getItem('sidebar-left-position'),
+                                    sidebarLeft = document.querySelector('#sidebar-left .nano-content');
+
+                                sidebarLeft.scrollTop = initialPosition;
+                            }
+                        }
+                    </script>
+
+
+                </div>
+
+            </aside>
+            <!-- end: sidebar -->
+
+            <section role="main" class="content-body pb-none">
+                <header class="page-header">
+                    <h2>Admin Dashboard</h2>
+
+                    <div class="right-wrapper pull-right">
+                        <ol class="breadcrumbs">
+
+                            <li><span>Admin Panel</span></li>
+                        </ol>
+
+                        <a class="sidebar-right-toggle" data-open=""><i class="fa fa-home"></i></a>
+
+                    </div>
+                </header>
+                <style>
+                    html.fixed.sidebar-left-collapsed .page-header {
+                        left: -40px;
+                    }
+
+                    html.fixed .page-header {
+                        left: -40px;
+                        margin: 0;
+                        position: relative;
+                        right: 0;
+                        top: -90px;
+                        margin-right: -81px;
+                    }
+                </style>
+
+                <!-- start: page -->
+                <!-- Product Upload mai minor changes hain  Profile View or Edit hgaya-->
+                <div class="col-md-12 " style="margin-top:-40px;">
+
+                    @* @Html.Partial("OrderDetailPartial");*@
+                    @RenderBody()
+
+
+                </div>
+
+                <!--Styles-->
+                <style>
+                    .col-md-12.box {
+                        position: relative;
+                        width: 102%;
+                        height: 1000px;
+                        left: 0%;
+                        margin-top: -91px;
+                    }
+
+                    html.no-overflowscrolling .nano {
+                        height: 200%;
+                        position: relative;
+                        overflow: hidden;
+                        width: 100%;
+                    }
+                </style>
+                <!-- end: page -->
+            </section>
+        </div>
+
+
+    </section>
+
+
+    <script src="~/Template2/HTML/assets/vendor/jquery/jquery.js"></script>
+    <script src="~/Template2/HTML/assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
+    <script src="~/Template2/HTML/assets/vendor/bootstrap/js/bootstrap.js"></script>
+    <script src="~/Template2/HTML/assets/vendor/nanoscroller/nanoscroller.js"></script>
+    <script src="~/Template2/HTML/assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="~/Template2/HTML/assets/vendor/magnific-popup/jquery.magnific-popup.js"></script>
+    <script src="~/Template2/HTML/assets/vendor/jquery-placeholder/jquery-placeholder.js"></script>
+
+    <!-- Specific Page Vendor -->
+    <script src="~/Template2/HTML/assets/vendor/select2/js/select2.js"></script>
+    <script src="~/Template2/HTML/assets/vendor/jquery-datatables/media/js/jquery.dataTables.js"></script>
+    <script src="~/Template2/HTML/assets/vendor/jquery-datatables-bs3/assets/js/datatables.js"></script>
+    <script src="~/Template2/HTML/assets/vendor/autosize/autosize.js"></script>
+    <script src="~/Template2/HTML/assets/vendor/bootstrap-fileupload/bootstrap-fileupload.min.js"></script>
+    <script src="~/Template2/HTML/assets/vendor/jquery-validation/jquery.validate.js"></script>
+    <script src="~/Template2/HTML/assets/vendor/bootstrap-wizard/jquery.bootstrap.wizard.js"></script>
+    <script src="~/Template2/HTML/assets/vendor/pnotify/pnotify.custom.js"></script>
+
+    <!-- Theme Base, Components and Settings -->
+    <script src="~/Template2/HTML/assets/javascripts/theme.js"></script>
+
+    <!-- Theme Custom -->
+    <script src="~/Template2/HTML/assets/javascripts/theme.custom.js"></script>
+
+    <!-- Theme Initialization Files -->
+    <script src="~/Template2/HTML/assets/javascripts/theme.init.js"></script>
+
+    <!-- Examples -->
+    <script src="~/Template2/HTML/assets/javascripts/forms/examples.wizard.js"></script>
+    <script src="~/Template2/HTML/assets/javascripts/tables/examples.datatables.editable.js"></script>
+    <script>
+
+        var TrackPostBackURL = '/AdminPanel/Status';
+        $(function () {
+            $(".Statusbtn").click(function () {
+                var id = $(this).attr("data-id");
+                //var id = $("#orderid").val();
+                $.ajax({
+                    type: "GET",
+                    url: TrackPostBackURL,
+                    contentType: "application/json; charset=utf-8",
+                    data: { "id": id },
+                    datatype: "json",
+                    success: function (data) {
+
+                        $('#myModalContent').html(data);
+                        //var status = $("#status").attr("data:id");
+
+
+                        $('#myModal').modal('show');
+
+                    },
+                    error: function () {
+                        alert("Failed Tracking");
+                    }
+                });
+            });
+        });
+
+        var TrackDetailPostBackURL = '/AdminPanel/ProductStatus';
+        $(function () {
+
+            $(".Addbtn").click(function () {
+                var id = $(this).attr("data-id");
+                //var id = $("#orderid").val();
+                $.ajax({
+                    type: "GET",
+                    url: TrackDetailPostBackURL,
+                    contentType: "application/json; charset=utf-8",
+                    data: { "id": id },
+                    datatype: "json",
+                    success: function (data) {
+
+                        $('#myModalContent').html(data);
+                        //var status = $("#status").attr("data:id");
+
+
+                        $('#myModal').modal('show');
+
+                    },
+                    error: function () {
+                        alert("Failed Tracking");
+                    }
+                });
+            });
+        });
+
+        $(document).on("click", ".browse", function () {
+            var file = $(this).parents().find(".file");
+            file.trigger("click");
+        });
+        $('input[type="file"]').change(function (e) {
+            var fileName = e.target.files[0].name;
+            $("#file").val(fileName);
+
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                // get loaded data and render thumbnail.
+                document.getElementById("preview").src = e.target.result;
+            };
+            // read the image file as a data URL.
+            reader.readAsDataURL(this.files[0]);
+        });
+    </script>
+    <script>
+        $("#searchname").on("keyup", function () {
+            var txtenter = $("#searchname").val();
+            $('table tr').each(function (results) {
+                if (results !== 0) {
+                    var id = $(this).find("td:nth-child(2)").text();
+                    if (id.indexOf(txtenter) !== 0 && id.toLowerCase().indexOf(txtenter.toLowerCase()) < 0) {
+                        $(this).hide();
+                    }
+                    else {
+                        $(this).show();
+                    }
+                }
+            })
+        })
+    </script>
+    @*<script type="text/javascript">
+
+            $(document).ready(function () {
+                //function LoadData() {
+
+                var url = "https://localhost:44313/api/Expense";
+                $.ajax({
+                    url: url,
+                    type: "GET",
+                    contentType: "application/json;charset=utf-8",
+                    dataType: "json",
+                    success: function (result) {
+                        var html = '';
+                        $.each(result, function (key, item) {
+                            html += '<tr style="font-size:small">';
+                            html += '<td><span id="lblid"></span>' + item.Id + '</td>';
+                            html += '<td>' + item.ExpenseName + '</td>';
+                            html += '<td>' + item.ExpenseType + '</td>';
+                            html += '<td>' + item.Amount + '</td>';
+                            html += '<td>' + item.Date + '</td>';
+                            html += '<td>' + item.Description + '</td>';
+                            html += '<td><a><i class="EditExpense fa fa-pencil" data-id="item.Id"></i></a></td>'
+                            html += '<td><a><i class="DeleteExpense fa fa-scissor" data-id="item.Id"></i></a></td>'
+                            html += '</tr>';
+                        });
+
+                        $('.tbody').html(html);
+                    },
+                    error: function (errormessage) {
+                        alert(errormessage.responseText);
+                    }
+                });
+
+
+
+            });
+
+        </script>*@
+
+    <script>
+        $("#AddExpense").click(function () {
+            //var id = $(this).attr("data-id");
+            //var id = $("#orderid").val();
+            $.ajax({
+                type: "GET",
+                url: '/AdminPanel/AddExpense',
+                success: function (data) {
+
+                    $('#myModalContent').html(data);
+                    //var status = $("#status").attr("data:id");
+
+
+                    $('#myModal').modal('show');
+
+                },
+                error: function () {
+                    alert("Failed Tracking");
+                }
+            });
+        });
+
+        $("#AddPurchase").click(function () {
+            //var id = $(this).attr("data-id");
+            //var id = $("#orderid").val();
+            $.ajax({
+                type: "GET",
+                url: '/AdminPanel/AddPurchase',
+                success: function (data) {
+
+                    $('#myModalContent').html(data);
+                    //var status = $("#status").attr("data:id");
+
+
+                    $('#myModal').modal('show');
+
+                },
+                error: function () {
+                    alert("Failed Tracking");
+                }
+            });
+        });
+
+        var URL = '/AdminPanel/EditPurchase';
+        $(function () {
+
+            $(".EditPurchase").click(function () {
+                var id = $(this).attr("data-id");
+                //var id = $("#orderid").val();
+                $.ajax({
+                    type: "GET",
+                    url: URL,
+                    contentType: "application/json; charset=utf-8",
+                    data: { "id": id },
+                    datatype: "json",
+                    success: function (data) {
+
+                        $('#myModalContent').html(data);
+                        //var status = $("#status").attr("data:id");
+
+
+                        $('#myModal').modal('show');
+
+                    },
+                    error: function () {
+                        alert("Failed Tracking");
+                    }
+                });
+            });
+        });
+
+        var URL = '/AdminPanel/EditExpense';
+        $(function () {
+
+            $(".EditExpense").click(function () {
+                var id = $(this).attr("data-id");
+                //var id = $("#orderid").val();
+                $.ajax({
+                    type: "GET",
+                    url: URL,
+                    contentType: "application/json; charset=utf-8",
+                    data: { "id": id },
+                    datatype: "json",
+                    success: function (data) {
+
+                        $('#myModalContent').html(data);
+                        //var status = $("#status").attr("data:id");
+
+
+                        $('#myModal').modal('show');
+
+                    },
+                    error: function () {
+                        alert("Failed Tracking");
+                    }
+                });
+            });
+        });
+
+        //$("#AddExpense").click(function () {
+        //    $("#myModal").load('/AdminPanel/AddExpense');
+        //})
+    </script>
+
+    <script>
+
+        $("#SaveExp").click(function () {
+            var res = validate();
+            if (res == false) {
+                return false;
+            }
+            var person = new Object();
+            person.ExpenseName = $("#ExpenseName").val();
+            person.ExpenseType = $("#ExpenseType").val();
+            person.Description = $("#Description").val();
+            person.Amount = $("#Amount").val();
+            person.Date = $("Date").val();
+
+            //var expObj = {
+            //    Id: $("#EmployeeId").val(),
+            //    ExpenseName: $("#ExpenseName").val(),
+            //    ExpenseType: $("#ExpenseType").val(),
+            //    Description: $("#Description").val(),
+            //    Amount: $("#Amount").val(),
+            //    Date: $("Date").val()
+            //};
+
+            $.ajax({
+                url: "https://localhost:44313/api/Expense/AddExpense",
+                type: 'POST',
+                contentType: "application/json;charset=utf-8",
+                data: person,
+                dataType: "json",
+                success: function (data, textStatus, xhr) {
+                    console.log(data);
+                    $("#Mymodal").modal("hide");
+                },
+                error: function (errormessage) {
+                    alert(errormessage.responseText);
+                }
+            });
+        });
+
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".datePicker").datepicker();
+        });
+
+    </script>
+
+
+</body>
+
+
+</html>

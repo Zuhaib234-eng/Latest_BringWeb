@@ -1,0 +1,75 @@
+﻿@model Bring.Models.ExpenseModel
+
+
+<div class="modal-header" style="border: 1px solid white;">
+    <div class="row">
+        <div class="col-sm-2">
+
+            <div class="circle" style="width: 80px;height: 80px;background-color: yellow;position: absolute;border-radius: 100%;background: -webkit-linear-gradient(left, #FF8C86,  #FFA575);">
+                <i class="fa fa-user" style="font-size:36px;color:white;text-align: center;margin-left: 27px;margin-top:17px;"></i>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <br>
+            <h2 class="modal-title" id="exampleModalLabel">
+                Expense
+            </h2>
+        </div>
+        <div class="col-sm-7">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+<div class="modal-body ">
+    <div class="container">
+
+        @using (Html.BeginForm("EditExpense","AdminPanel",FormMethod.Post))
+        {
+        <form class="form-group">
+            @Html.HiddenFor(mod=>mod.Id)
+            <br>
+            <label>Expense Name</label>
+            @*<input type="text" name="ExpenseType" id="ExpenseType" class="form-control" placeholder="Expense Text*" style="width: 550px;border-radius: 20px 20px 20px 20px;">*@
+            @Html.TextBoxFor(mod => mod.ExpenseName, new { @class = "form-control", @placeholder = "Expense Name", @style = "width: 550px;border-radius: 20px 20px 20px 20px;" })
+            <br>
+            <label>Expense Type</label>
+            @Html.TextBoxFor(mod => mod.ExpenseType, new { @class = "form-control", @placeholder = "Expense Type", @style = "width: 550px;border-radius: 20px 20px 20px 20px;" })            <br>
+            <label>Description</label>
+            @Html.TextAreaFor(mod => mod.Description, new { @class = "form-control", @placeholder = "Write something ....", @style = "width: 550px;border-radius: 20px 20px 20px 20px;" })
+            @*<textarea class="form-control" name="Description" id="Discription" style="border-radius: 20px 20px 20px 20px;width: 550px"></textarea>*@
+            <br>
+            <label>Amount</label>
+            @Html.TextBoxFor(mod => mod.Amount, new { @class = "form-control", @placeholder = "Rs:XXXXXX", @style = "width: 550px;border-radius: 20px 20px 20px 20px;" })
+            @*<input type="text" name="Amount" id="Amount" class="form-control" placeholder="Amount*" style="width: 550px;border-radius: 20px 20px 20px 20px;">*@
+
+            <br>
+            <label>Date</label>
+            @Html.TextBoxFor(mod => mod.Date, new { @class = "form-control", @style = "width: 550px;border-radius: 20px 20px 20px 20px;" })
+
+            @*<input type="date" name="Date" id="Date" class="form-control" placeholder="Date*" style="width: 550px;border-radius: 20px 20px 20px 20px;">*@
+
+            <br>
+            <div class="text-center">
+                <input class="form-control" type="submit" name="save" class="btn" style="background: -webkit-linear-gradient(left, #FF8C86,  #FFA575);color: white;width: 200px;border-radius: 20px 20px 20px 20px;margin-left: 170px;" value="Save">
+            </div>
+        </form>
+        }
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $.datepicker.parseDate("dd-mm-yy");
+        $(".datePicker").datepicker();
+        
+    });
+</script>
+
+
+
+
+
+

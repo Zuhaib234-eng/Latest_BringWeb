@@ -1,0 +1,86 @@
+﻿@model IEnumerable<Bring.Models.ExpenseModel>
+
+@{
+    ViewBag.Title = "Expense";
+    Layout = "~/Views/Shared/_Layout3.cshtml";
+}
+
+<br />
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div id='myModalContent'></div>
+
+    </div>
+</div>
+</div>
+<section class="body">
+    <header class="panel-heading">
+        @using (Html.BeginForm("ExpenseSearch", "AdminPanel", FormMethod.Post))
+        {
+            <div class="panel-actions">
+                <div class="row">
+                    <div class="col-sm-7"><input type="text" class="datePicker form-control" id="searchdate" name="searchdate" placeholder="Search" /></div>
+                    <div class="col-sm-2"> <input type="submit" class="btn btn search-field" value="Enter" /></div>
+                </div>
+            </div>
+            @*<input type="text" class="datePicker form-control" id="searchdate" name="searchdate" placeholder="Search" />
+            <input type="submit" class="btn btn search-field" value="Enter" />*@
+            
+        }
+        <h2 class="panel-title">Expense&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class=" btn btn-secondary" id="AddExpense"><i class="fa fa-plus"></i> Add Expense</button></h2>
+    </header>
+    <div class="panel-body">
+        <div class="table-responsive">
+            <table class="table table-striped mb-none">
+                <thead>
+                    <tr style="font-size:small">
+                        <th>Id</th>
+                        <th>Expense Name</th>
+                        <th>Expense type</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                        <th>Description</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+
+                <tbody class="tbody">
+                    @foreach (var item in Model)
+                    {
+                    <tr>
+                        <td>@Html.DisplayFor(mod => item.Id)</td>
+                        <td>@Html.DisplayFor(mod => item.ExpenseName)</td>
+                        <td>@Html.DisplayFor(mod => item.ExpenseType)</td>
+                        <td>@Html.DisplayFor(mod => item.Amount)</td>
+                        <td>@Html.DisplayFor(mod => item.Date)</td>
+                        <td>@Html.DisplayFor(mod => item.Description)</td>
+                        <td><a><i class="EditExpense fa fa-pencil" data-id="@item.Id"></i></a></td>
+                        <td><a href="@Url.Action("DeleteExpense", "AdminPanel", new { id = @item.Id })"><i class="fa fa-scissors"></i></a></td>
+                    </tr>
+                        }
+
+                </tbody>
+
+
+
+            </table>
+        </div>
+    </div>
+</section>
+
+@*<script>
+    $(document).ready(function () {
+        $(".datePicker").datepicker();
+    });
+
+</script>*@
+
+
+
+
+
+
+

@@ -1,0 +1,104 @@
+﻿@model IEnumerable<Bring.Models.Product>
+
+@{
+    ViewBag.Title = "ProductDetail";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<section class="body">
+    <header class="panel-heading">
+        <div class="panel-actions">
+            <input type="text" class="form-control" id="searchname" name="q" placeholder="Search" />
+        </div>
+
+        <h2 class="panel-title">Product Details</h2>
+    </header>
+
+
+    <div class="panel-body">
+        <div class="table-responsive">
+            <table class="table table-striped mb-none">
+                <thead>
+                    <tr style="font-size:small">
+                        <th>Id</th>
+                        <th>ProductName</th>
+                        <th>Description</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Stock</th>
+                        <th>Edit </th>
+                        <th>Delete </th>
+
+                    </tr>
+                </thead>
+
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr style="font-size:small">
+                            <td><span id="lblid">@Html.DisplayFor(mod => item.Id)</span></td>
+                            <td>@Html.DisplayFor(mod => item.ProductName)</td>
+                            <td>@Html.DisplayFor(mod => item.Description)</td>
+                            <td>@Html.DisplayFor(mod => item.PhoneNo)</td>
+                            <td>@Html.DisplayFor(mod => item.Email)</td>
+                            <td>@Html.DisplayFor(mod => item.CategoryName)</td>
+                            <td>@Html.DisplayFor(mod => item.Price)</td>
+                            <td>@Html.DisplayFor(mod => item.ProductStock)</td>
+                            @*<td>@Html.DisplayFor(mod => item.VendorId)</td>*@
+                            <td><a href="@Url.Action("EditProduct","Vendor",new { id = item.Id })"><i class="fa fa-pencil"></i></a></td>
+                            <td><input type="button" data-toggle="modal" data-target="#confirmationmodal" onclick="ProductDelete(@item.Id)" class="fa fa-scissors"></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<div class="modal fade" id="confirmationmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Warning</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                are you sure you want to delete this product?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" id="DeleteBtn" class="btn btn-primary">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="~/Content/PopUp/notiflix-aio-2.7.0.min.js"></script>
+
+<script>
+    var Id = "";
+    function ProductDelete(id) {
+        Id = parseInt(id);
+        $("#confirmationmodal").modal('show');        
+    }
+    $("#DeleteBtn").click(function () {
+        $.ajax({
+            type: "POST",
+            url: '/Vendor/DeleteProduct/' + Id,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (r) {
+                if (r == 'success') {
+                    location.reload();
+                    //$("#confirmationmodal").modal('hide');
+                }
+            }
+        });
+    });
+</script>

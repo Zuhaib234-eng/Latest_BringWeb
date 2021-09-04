@@ -1,0 +1,108 @@
+﻿@model Bring.Models.VendorModel
+@{
+    ViewBag.Title = "ViewProfile";
+    Layout = "~/Views/Shared/_Layout3.cshtml";
+}
+
+
+<header class="panel-heading">
+    <div class="panel-actions">
+
+    </div>
+
+    <h2 class="panel-title">View Profile</h2>
+</header>
+<div class="panel-body">
+    <form class="form-horizontal form-bordered" method="post">
+
+
+        <div class="form-group">
+            <label class="col-md-3 control-label" for="inputReadOnly">First Name : </label>
+            <div class="col-md-6">
+                <label class="control-label"><span> @Html.DisplayFor(mod => mod.Name) </span> </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-3 control-label" for="inputReadOnly">Last Name : </label>
+            <div class="col-md-6">
+                <label class="control-label"><span> @Html.DisplayFor(mod => mod.LastName) </span> </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-3 control-label" for="inputReadOnly">Email : </label>
+            <div class="col-md-6">
+                <label class="control-label"><span> @Html.DisplayFor(mod => mod.Email) </span> </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-3 control-label" for="inputReadOnly">Phone No : </label>
+            <div class="col-md-6">
+                <label class="control-label"><span> @Html.DisplayFor(mod => mod.PhoneNo) </span> </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-3 control-label" for="inputReadOnly">Country : </label>
+            <div class="col-md-6">
+                <label class="control-label"><span> @Html.DisplayFor(mod => mod.Country) </span> </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-3 control-label" for="inputReadOnly">City : </label>
+            <div class="col-md-6">
+                <label class="control-label"><span> @Html.DisplayFor(mod => mod.City) </span> </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-3 control-label" for="inputReadOnly">CNIC : </label>
+            <div class="col-md-6">
+                <label class="control-label"><span> @Html.DisplayFor(mod => mod.Cnic) </span> </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-3 control-label" for="inputReadOnly"> Address : </label>
+            <div class="col-md-6">
+                <label class="control-label"><span> @Html.DisplayFor(mod => mod.Address) </span> </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-3 control-label" for="inputReadOnly"> Admin Lock :  </label>
+            <div class="col-md-6">
+                <label class="control-label"><span> @Html.DisplayFor(mod => mod.AdminLock) </span> </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-3 control-label" for="inputReadOnly">Bank Account No : </label>
+            <div class="col-md-6">
+                <label class="control-label"><span> # </span> </label>
+            </div>
+        </div>
+        <div class="form-group">
+
+            <div class="col-md-6">
+                @Html.ActionLink("Edit Profile","EditProfile","AdminPanel",new {id = Model.Id },new { @class= "col-md-3 btn btn-success" })
+                @*<button type="submit" class="col-md-3 btn btn-success">Edit</button>*@
+            </div>
+        </div>
+
+
+    </form>
+</div>
+<style>
+    .control-label {
+        font-size: large;
+    }
+    .btn-success {
+        position: relative;
+        left: 80%;
+    }
+</style>
+
+
+
+
+
+
+
+
+
+

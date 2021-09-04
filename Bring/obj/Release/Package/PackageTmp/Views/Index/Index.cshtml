@@ -1,0 +1,927 @@
+﻿@model Bring.Models.IndexProduct
+@{
+    ViewBag.Title = "Index";
+}
+
+<main id="content" role="main">
+    <!-- Slider Section -->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators" style="">
+            <li style="text-indent: 0;margin: 0 2px;width: 10px;height: 10px;border:none;border-radius: 100%;line-height: 30px;background-color: #FED700;margin-top: -30px;" data-target="#slider" data-slide-to="0" class="active"></li>
+            <li style="text-indent: 0;margin: 0 2px;width: 10px;height: 10px;border:none;border-radius: 100%;line-height: 30px;background-color: #FED700;margin-top: -30px;" data-target="#slider" data-slide-to="1"></li>
+            <li style="text-indent: 0;margin: 0 2px;width: 10px;height: 10px;border:none;border-radius: 100%;line-height: 30px;background-color: #FED700;margin-top: -30px;" data-target="#slider" data-slide-to="2"></li>
+            <li style="text-indent: 0;margin: 0 2px;width: 10px;height: 10px;border:none;border-radius: 100%;line-height: 30px;background-color: #FED700;margin-top: -30px;" data-target="#slider" data-slide-to="2"></li>
+            <li style="text-indent: 0;margin: 0 2px;width: 10px;height: 10px;border:none;border-radius: 100%;line-height: 30px;background-color: #FED700;margin-top: -30px;" data-target="#slider" data-slide-to="2"></li>
+        </ol>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="~/Images/Image1.jpg" alt="food image 1" width="1400" height="400" />
+            </div>
+            <div class="carousel-item">
+                <img src="~/Images/Image1.jpg" alt="food image 1" width="1400" height="400" />
+
+            </div>
+            <div class="carousel-item">
+                <img src="~/Images/Image2.jpg" alt="food image 2" width="1400" height="400" />
+            </div>
+            <div class="carousel-item">
+                <img src="~/Images/Image3.jpg" alt="food image 3" width="1400" height="400" />
+            </div>
+        </div>
+
+
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev" style="top: 100px;">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next" style="top: 100px;">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+    <!-- End Slider Section -->
+    <div class="container">
+        <!-- Banner -->
+        <!-- End Banner -->
+        <!-- Feature List -->
+        <div class="mb-6 row border rounded-lg mx-0 flex-nowrap flex-xl-wrap overflow-auto overflow-xl-visble">
+            <!-- Feature List -->
+            <div class="media col px-6 px-xl-4 px-wd-8 flex-shrink-0 flex-xl-shrink-1 min-width-270-all py-3">
+                <div class="u-avatar mr-2">
+                    <i class="text-primary ec ec-transport font-size-46"></i>
+                </div>
+                <div class="media-body text-center">
+                    <span class="d-block font-weight-bold text-dark">Free Delivery</span>
+                    <div class=" text-secondary">from $50</div>
+                </div>
+            </div>
+            <!-- End Feature List -->
+            <!-- Feature List -->
+            <div class="media col px-6 px-xl-4 px-wd-8 flex-shrink-0 flex-xl-shrink-1 min-width-270-all border-left py-3">
+                <div class="u-avatar mr-2">
+                    <i class="text-primary ec ec-customers font-size-56"></i>
+                </div>
+                <div class="media-body text-center">
+                    <span class="d-block font-weight-bold text-dark">99 % Customer</span>
+                    <div class=" text-secondary">Feedbacks</div>
+                </div>
+            </div>
+            <!-- End Feature List -->
+            <!-- Feature List -->
+            <div class="media col px-6 px-xl-4 px-wd-8 flex-shrink-0 flex-xl-shrink-1 min-width-270-all border-left py-3">
+                <div class="u-avatar mr-2">
+                    <i class="text-primary ec ec-returning font-size-46"></i>
+                </div>
+                <div class="media-body text-center">
+                    <span class="d-block font-weight-bold text-dark">365 Days</span>
+                    <div class=" text-secondary">for free return</div>
+                </div>
+            </div>
+            <!-- End Feature List -->
+            <!-- Feature List -->
+            <div class="media col px-6 px-xl-4 px-wd-8 flex-shrink-0 flex-xl-shrink-1 min-width-270-all border-left py-3">
+                <div class="u-avatar mr-2">
+                    <i class="text-primary ec ec-payment font-size-46"></i>
+                </div>
+                <div class="media-body text-center">
+                    <span class="d-block font-weight-bold text-dark">Payment</span>
+                    <div class=" text-secondary">Secure System</div>
+                </div>
+            </div>
+            <!-- End Feature List -->
+            <!-- Feature List -->
+            <div class="media col px-6 px-xl-4 px-wd-8 flex-shrink-0 flex-xl-shrink-1 min-width-270-all border-left py-3">
+                <div class="u-avatar mr-2">
+                    <i class="text-primary ec ec-tag font-size-46"></i>
+                </div>
+                <div class="media-body text-center">
+                    <span class="d-block font-weight-bold text-dark">Only Best</span>
+                    <div class=" text-secondary">Brands</div>
+                </div>
+            </div>
+            <!-- End Feature List -->
+        </div>
+        <!-- End Feature List -->
+        <!-- Tab Prodcut Section -->
+        <div class="mb-6">
+            <!-- Nav Classic -->
+            <div class="position-relative bg-white text-center z-index-2">
+                <ul class="nav nav-classic nav-tab justify-content-center" id="pills-tab" role="tablist">
+
+
+                    <li class="nav-item">
+                        <a class="nav-link active js-animation-link" id="pills-two-example1-tab" data-toggle="pill" href="#pills-two-example1" role="tab" aria-controls="pills-two-example1" aria-selected="true"
+                           data-target="#pills-two-example1"
+                           data-link-group="groups"
+                           data-animation-in="slideInUp">
+                            <div class="d-md-flex justify-content-md-center align-items-md-center">
+                                Featured
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- End Nav Classic -->
+            <!-- Tab Content -->
+            <div class="tab-content" id="pills-tabContent">
+
+                <div class="tab-pane fade pt-2 show active" id="pills-two-example1" role="tabpanel" aria-labelledby="pills-two-example1-tab" data-target-group="groups">
+                    <ul class="row list-unstyled products-group no-gutters">
+                        @foreach (var item in Model.LatestProduct)
+                        {
+
+
+                            <li class="col-6 col-md-4 col-xl product-item">
+                                <div class="product-item__outer h-100 w-100">
+                                    <div class="product-item__inner px-xl-4 p-3">
+                                        <div class="product-item__body pb-xl-2">
+                                            <div class="mb-2">
+                                                <a href="../shop/product-categories-7-column-full-width.html" class="font-size-12 text-gray-5">@Html.DisplayFor(mod => item.CategoryName)</a>
+                                            </div>
+                                            <h5 class="mb-1 product-item__title">
+                                                <a href="../shop/single-product-fullwidth.html" class="text-blue font-weight-bold">@Html.DisplayFor(mod => item.ProductName)</a>
+                                            </h5>
+                                            <div class="mb-2">
+                                                <a href="@Url.Action("SingleProduct","Shop",new { id = item.Id})" class="d-block text-center"><img class="img-fluid" src="../ProductImages/@item.ImagePath1" @*src="@item.Imageyype"*@ alt="Image Description"></a>
+                                            </div>
+                                            <div class="flex-center-between mb-1">
+                                                <div class="prodcut-price">
+                                                    <div class="text-gray-100">@Html.DisplayFor(mod => item.Price)</div>
+                                                </div>
+                                                <div class="d-none d-xl-block prodcut-add-cart">
+                                                    @Html.ActionLink(".", "SingleProduct", "Shop", new { id = item.Id }, new { @class = " ec ec-add-to-cart btn-add-cart btn-primary transition-3d-hover" })
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__footer">
+                                            <div class="border-top pt-2 flex-center-between flex-wrap">
+                                                <span> @Html.ActionLink("Wishlist", "WishList", "Shop", new { id = item.Id }, new { @class = "text-gray-6 font-size-13 " })</span>
+                                                <i class="ec ec-favorites mr-1 font-size-15"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        }
+
+                    </ul>
+                </div>
+
+            </div>
+            <!-- End Tab Content -->
+        </div>
+        <!-- End Tab Prodcut Section -->
+    </div>
+
+
+    <!-- Television Entertainment -->
+    <div class="container">
+        @*<div class="col-sm-12  wpb_wrapper" style="border-bottom:2px solid black;height:20px;">
+
+            </div>*@
+        <hr />
+    </div>
+    <br />
+    <br />
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="@Url.Action("MainCategory", "Shop",new { param = "SuperMarket" })"><img src="~/fwdsubcategories/supermarket.jpg" class="img-responsive" style="width:100%;" /></a>
+            </div>
+            <div class="col-sm-4">
+                <a href="@Url.Action("MainCategory", "Shop",new { param = "FreshFruitsAndVegetable" })"><img src="~/fwdsubcategories/fresh_produce_market.jpg" class="img-responsive" style="width:100%;" /></a>
+            </div>
+            <div class="col-sm-4">
+                <a href="@Url.Action("MainCategory", "Shop",new { param = "Bakeries" })"><img src="~/fwdsubcategories/bakeries.jpg" class="img-responsive" style="width:100%;" /></a>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="@Url.Action("MainCategory", "Shop",new { param = "OrganicShop" })"><img src="~/fwdsubcategories/organic_shop.jpg" class="img-responsive" style="width:100%;" /></a>
+            </div>
+            <div class="col-sm-4">
+                <a href="@Url.Action("MainCategory", "Shop",new { param = "CosmeticAndBeauty" })"><img src="~/fwdsubcategories/cosmetic___beauty.jpg" class="img-responsive" style="width:100%;" /></a>
+            </div>
+            <div class="col-sm-4">
+                <a href="@Url.Action("MainCategory", "Shop",new { param = "Others" })"><img src="~/fwdsubcategories/frozen_food.jpg" class="img-responsive" style="width:100%;" /></a>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="@Url.Action("Category", "Shop",new { param = "Pharmacies" })"><img src="~/fwdsubcategories/pharmacies.jpg" class="img-responsive" style="width:100%;" /></a>
+            </div>
+            <div class="col-sm-4">
+                <a href="@Url.Action("Category", "Shop",new { param = "IceCream" })"><img src="~/fwdsubcategories/ice_cream.jpg" class="img-responsive" style="width:100%;" /></a>
+            </div>
+            <div class="col-sm-4">
+                <a href="@Url.Action("Category", "Shop",new { param = "NutsAndSeeds" })"><img src="~/fwdsubcategories/nuts___seeds.jpg" class="img-responsive" style="width:100%;" /></a>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="@Url.Action("Category", "Shop",new { param = "ButcheryAndBBQ" })"><img src="~/fwdsubcategories/butchery_bbq.jpg" class="img-responsive" style="width:100%;" /></a>
+            </div>
+            <div class="col-sm-4">
+                <a href="@Url.Action("Category", "Shop",new { param = "SoftDrinkAndJuices" })"><img src="~/fwdsubcategories/soft_drink___juice.jpg" class="img-responsive" style="width:100%;" /></a>
+            </div>
+            <div class="col-sm-4">
+                <a href="@Url.Action("Category", "Shop",new { param = "Water" })"><img src="~/fwdsubcategories/water.jpg" class="img-responsive" style="width:100%;" /></a>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="@Url.Action("Category", "Shop",new { param = "Tobacco" })"><img src="~/fwdsubcategories/tobacco.jpg" class="img-responsive" style="width:100%;" /></a>
+            </div>
+            <div class="col-sm-4">
+                <a href="@Url.Action("Category", "Shop",new { param = "PrepaidCard" })"><img src="~/fwdsubcategories/prepaid_card.jpg" class="img-responsive" style="width:100%;" /></a>
+            </div>
+            <div class="col-sm-4">
+                <a href="@Url.Action("Category", "Shop",new { param = "CakesAndDessert" })"><img src="~/fwdsubcategories/cakes_dessert.jpg" class="img-responsive" style="width:100%;" /></a>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="@Url.Action("Category", "Shop",new { param = "CerealsAndPackets" })"><img src="~/fwdsubcategories/cereals_packets.jpg" class="img-responsive" style="width:100%;" /></a>
+            </div>
+            <div class="col-sm-4">
+                <a href="@Url.Action("Category", "Shop",new { param = "ChipsAndSnacks" })"><img src="~/fwdsubcategories/chips___snacks.jpg" class="img-responsive" style="width:100%;" /></a>
+            </div>
+            <div class="col-sm-4">
+                <a href="@Url.Action("Category", "Shop",new { param = "ChocolatesAndCandies" })"><img src="~/fwdsubcategories/chocolates___candies.jpg" class="img-responsive" style="width:100%;" /></a>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="@Url.Action("Category", "Shop",new { param = "DairyAndMilk" })"><img src="~/fwdsubcategories/dairy___milk.jpg" class="img-responsive" style="width:100%;" /></a>
+            </div>
+            <div class="col-sm-4">
+                <a href="@Url.Action("Index", "Shop",new { param = "" })"><img src="~/fwdsubcategories/pet_shop.jpg" class="img-responsive" style="width:100%;" /></a>
+            </div>
+
+        </div>
+    </div>
+    <br />
+    <br />
+    <!--  @*<div class="mb-6" style="background-image: url(../../assets/img/1920X1080/img4.jpg);">*@ -->
+
+    <div class="container">
+        <div class="row min-height-564 align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2 wpb_wrapper">
+                        <h3 style="line-height: 0.9;">
+                            Fruit &
+                            <br /> Vegetables
+                        </h3>
+                    </div>
+                    <div class="col-sm-8  wpb_wrapper" style="border-bottom:2px solid black;height:20px;">
+                        <!--  @*<div class="wpb_wrapper" style="border-bottom:2px solid black;height:20px;">
+
+                        </div>*@ -->
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <img src="~/fwdbanners/2.jpg" class="img-responsive" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- --------fruits&vegitable--------- -->
+        <div class="container">
+            <div class="row min-height-564 align-items-center">
+                <div class="container-fluid mt-4">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <img src="~/fwdbanners/02.jpg" style="width:100%; height:440px;" />
+                        </div>
+
+                        <ul class="row list-unstyled products-group no-gutters">
+                            @foreach (var item in Model.Vegetable)
+                            {
+                                <li class=" col-wd-2gdot4 product-item" style="width: 220px;">
+
+                                    <div class="product-item__outer h-100">
+
+                                        <div class="product-item__inner px-xl-4 p-3" style="height: 20px">
+                                            <div class="product-item__body pb-xl-2" style="height: 371px">
+                                                <a class="font-size-12 text-gray-5"> </a>
+                                                <div class="col-md-3">
+                                                    <a href="@Url.Action("SingleProduct","Shop",new { id = item.Id})">@Html.DisplayFor(mod => item.CategoryName)</a>
+                                                </div>
+                                                <h1 class="product-item__title text-blue font-weight-bold"> </h1>
+                                                <h5 class="mb-1 product-item__title">
+                                                    <a href="@Url.Action("SingleProduct","Shop",new { id = item.Id})" class="text-blue font-weight-bold">@Html.DisplayFor(mod => item.ProductName)</a>
+                                                </h5>
+                                                <div class="mb-2">
+                                                    <a href="@Url.Action("SingleProduct","Shop",new { id = item.Id})" class="d-block text-center">
+                                                        <img class="img-fluid" src="../ProductImages/@item.ImagePath1" alt="Image Description" style="height: 220px;">
+                                                    </a>
+                                                </div>
+                                                <label class="font-size-12 p-0 text-gray-110 mb-4"></label>
+                                                <ul class="font-size-12 p-0 text-gray-110">
+                                                    <li class="line-clamp-1 mb-1 list-bullet">@Html.DisplayFor(mod => item.Category)</li>
+
+                                                </ul>
+                                                <div class="text-gray-20 mb-2 font-size-12">@Html.DisplayFor(mod => item.Price)</div>
+                                                <div class="flex-center-between mb-1">
+                                                    <div class="prodcut-price">
+
+
+                                                    </div>
+                                                    <div class="d-none d-xl-block prodcut-add-cart" style="height: 20px;margin-top:-70px;">
+
+                                                        @Html.ActionLink(".", "SingleProduct", "Shop", new { id = item.Id }, new { @class = " ec ec-add-to-cart btn-add-cart btn-primary transition-3d-hover" })
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="product-item__footer" style="height: 20px">
+                                                <div class="border-top pt-2 flex-center-between flex-wrap">
+                                                    <span> @Html.ActionLink("Wishlist", "WishList", "Shop", new { id = item.Id }, new { @class = "text-gray-6 font-size-13 " })</span>
+                                                    <i class="ec ec-favorites mr-1 font-size-15"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+                            }
+
+
+                        </ul>
+
+
+
+
+
+
+
+                    </div>
+                </div>
+                <br />
+                <br />
+            </div>
+        </div>
+        <!-- --------organic-------- -->
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2 wpb_wrapper">
+                    <br />
+                    <br />
+                    <h3 style="line-height: 0.9;">Organic shop</h3>
+                </div>
+
+                <div class="col-sm-8  wpb_wrapper" style="border-bottom:2px solid black;height:60px;">
+
+                </div>
+            </div>
+            <br>
+            <div class="row">
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-12">
+                    <img src="~/fwdbanners/3.jpg" class="img-responsive" />
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mt-4">
+            <div class="row">
+                <div class="col-sm-3">
+                    <img src="~/fwdbanners/03.jpg" style="width:100%; height:440px;" />
+                </div>
+
+                <ul class="row list-unstyled products-group no-gutters">
+
+                    @foreach (var item in Model.Organic)
+                    {
+                        <li class=" col-wd-2gdot4 product-item" style="width: 220px;">
+
+                            <div class="product-item__outer h-100">
+
+                                <div class="product-item__inner px-xl-4 p-3" style="height: 20px">
+                                    <div class="product-item__body pb-xl-2" style="height: 371px">
+
+
+
+
+
+                                        <a class="font-size-12 text-gray-5"> </a>
+                                        <div class="mb-2">
+                                            <a href="@Url.Action("SingleProduct","Shop",new { id = item.Id})" class="font-size-12 text-gray-5">@Html.DisplayFor(mod => item.CategoryName)</a>
+                                        </div>
+                                        <h1 class="product-item__title text-blue font-weight-bold"> </h1>
+                                        <h5 class="mb-1 product-item__title">
+                                            <a href="@Url.Action("SingleProduct","Shop",new { id = item.Id})" class="text-blue font-weight-bold">@Html.DisplayFor(mod => item.ProductName)</a>
+                                        </h5>
+                                        <div class="mb-2">
+                                            <a href="@Url.Action("SingleProduct","Shop",new { id = item.Id})" class="d-block text-center">
+                                                <img class="img-fluid" src="../ProductImages/@item.ImagePath1" alt="Image Description" style="height: 220px;">
+                                            </a>
+                                        </div>
+                                        <label class="font-size-12 p-0 text-gray-110 mb-4"></label>
+                                        <ul class="font-size-12 p-0 text-gray-110">
+                                            <li class="line-clamp-1 mb-1 list-bullet">@Html.DisplayFor(mod => item.Category)</li>
+
+                                        </ul>
+                                        <div class="text-gray-20 mb-2 font-size-12">@Html.DisplayFor(mod => item.Price)</div>
+                                        <div class="flex-center-between mb-1">
+                                            <div class="prodcut-price">
+
+
+                                            </div>
+                                            <div class="d-none d-xl-block prodcut-add-cart" style="height: 20px;margin-top:-70px;">
+
+                                                @Html.ActionLink(".", "SingleProduct", "Shop", new { id = item.Id }, new { @class = " ec ec-add-to-cart btn-add-cart btn-primary transition-3d-hover" })
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="product-item__footer" style="height: 20px">
+                                        <div class="border-top pt-2 flex-center-between flex-wrap">
+                                            <span> @Html.ActionLink("Wishlist", "WishList", "Shop", new { id = item.Id }, new { @class = "text-gray-6 font-size-13 " })</span>
+                                            <i class="ec ec-favorites mr-1 font-size-15"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </li>
+                    }
+
+                </ul>
+
+
+
+
+
+
+
+            </div>
+        </div>
+        <br />
+        <br />
+        <!-- ------Bakries------ -->
+
+        <div class="container">
+            <div class="row min-height-564 align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-2 wpb_wrapper">
+                            <br />
+                            <br />
+                            <h3 style="line-height: 0.9;">Bakries</h3>
+                        </div>
+                        <div class="col-sm-8  wpb_wrapper" style="border-bottom:2px solid black;height:60px;">
+                            <!--  @*<div class="wpb_wrapper" style="border-bottom:2px solid black;height:20px;">
+
+                            </div>*@ -->
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <img src="~/fwdbanners/5.jpg" class="img-responsive" />
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid mt-4">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <img src="~/fwdbanners/05.jpg" style="width:100%; height:440px;" />
+                        </div>
+
+                        <ul class="row list-unstyled products-group no-gutters">
+                            @foreach (var item in Model.Bakeries)
+                            {
+                                <li class=" col-wd-2gdot4 product-item" style="width: 220px;">
+
+                                    <div class="product-item__outer h-100">
+
+                                        <div class="product-item__inner px-xl-4 p-3" style="height: 20px">
+                                            <div class="product-item__body pb-xl-2" style="height: 371px">
+
+
+
+
+
+                                                <a class="font-size-12 text-gray-5"> </a>
+                                                <div class="mb-2">
+                                                    <a href="@Url.Action("SingleProduct","Shop",new { id = item.Id})" class="font-size-12 text-gray-5">@Html.DisplayFor(mod => item.CategoryName)</a>
+                                                </div>
+                                                <h1 class="product-item__title text-blue font-weight-bold"> </h1>
+                                                <h5 class="mb-1 product-item__title">
+                                                    <a href="@Url.Action("SingleProduct","Shop",new { id = item.Id})" class="text-blue font-weight-bold">@Html.DisplayFor(mod => item.ProductName)</a>
+                                                </h5>
+                                                <div class="mb-2">
+                                                    <a href="@Url.Action("SingleProduct","Shop",new { id = item.Id})" class="d-block text-center">
+                                                        <img class="img-fluid" src="../ProductImages/@item.ImagePath1" alt="Image Description" style="height: 220px;">
+                                                    </a>
+                                                </div>
+                                                <label class="font-size-12 p-0 text-gray-110 mb-4"></label>
+                                                <ul class="font-size-12 p-0 text-gray-110">
+                                                    <li class="line-clamp-1 mb-1 list-bullet">@Html.DisplayFor(mod => item.Category)</li>
+
+                                                </ul>
+                                                <div class="text-gray-20 mb-2 font-size-12">@Html.DisplayFor(mod => item.Price)</div>
+                                                <div class="flex-center-between mb-1">
+                                                    <div class="prodcut-price">
+
+
+                                                    </div>
+                                                    <div class="d-none d-xl-block prodcut-add-cart" style="height: 20px;margin-top:-70px;">
+
+                                                        @Html.ActionLink(".", "SingleProduct", "Shop", new { id = item.Id }, new { @class = " ec ec-add-to-cart btn-add-cart btn-primary transition-3d-hover" })
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="product-item__footer" style="height: 20px">
+                                                <div class="border-top pt-2 flex-center-between flex-wrap">
+                                                    <span> @Html.ActionLink("Wishlist", "WishList", "Shop", new { id = item.Id }, new { @class = "text-gray-6 font-size-13 " })</span>
+                                                    <i class="ec ec-favorites mr-1 font-size-15"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+                            }
+
+                        </ul>
+
+
+
+
+
+
+
+                    </div>
+                </div>
+                <br>
+                <br />
+                <br />
+                <!-- ---------supermart-------- -->
+
+
+                <div class="container">
+                    <div class="row min-height-564 align-items-center">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-2 wpb_wrapper">
+                                    <br />
+                                    <br />
+                                    <h3 style="line-height: 0.9;">Super Mart</h3>
+                                </div>
+                                <div class="col-sm-8  wpb_wrapper" style="border-bottom:2px solid black;height:60px;">
+                                    <!--  @*<div class="wpb_wrapper" style="border-bottom:2px solid black;height:20px;">
+
+                                    </div>*@ -->
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img src="~/fwdbanners/1.jpg" class="img-responsive" />
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="container-fluid col-md-12">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img src="~/fwdbanners/01.jpg" style="width:100%;height:100%;" />
+                                </div>
+                                @foreach (var item in Model.SuperMart)
+                                {
+                                <div class="col-md-3">
+                                    
+
+                                    <div class="container d-flex justify-content-center">
+                                        <figure class="card card-product-grid card-lg">
+                                            <a href="#" class="img-wrap" data-abc="true"> <img class="img-fluid" src="../ProductImages/@item.ImagePath1"> </a>
+
+                                            <div class="">
+                                                <figcaption class="info-wrap">
+                                                    <div class="row">
+                                                        <div class="col-md-9 col-xs-9"> <a href="#" class="title" data-abc="true">$3,999</a> <span class="rated">VISA Platinum</span> </div>
+                                                        <div class="col-md-3 col-xs-3">
+                                                            <div class="rating text-right"> #### 8787 </div>
+                                                        </div>
+                                                    </div>
+                                                </figcaption>
+                                            </div>
+                                            <div class="bottom-wrap">
+                                                <button class="btn btn-primary" id="WishListbtn" data-abc="true">  </button>
+                                                <input type="button" class="btn btn-primary float-right" id="addToCartbtn" onclick="AddToCart(@item.Id)">
+
+                                            </div>
+                                        </figure>
+                                    </div>
+                                </div>
+                                        }
+                                    </div>
+                                </div>
+
+                        <br>
+                        <br />
+                        <br />
+
+                        <!-- ------cosmetics----- -->
+
+
+                        <div class="container">
+                            <div class="row min-height-564 align-items-center">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-2 wpb_wrapper">
+                                            <br />
+                                            <br />
+                                            <h3 style="line-height: 0.9;">
+                                                Cosmetic  &
+                                                <br /> Beauty
+                                            </h3>
+                                        </div>
+                                        <div class="col-sm-8  wpb_wrapper" style="border-bottom:2px solid black;height:60px;">
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img src="~/fwdbanners/4.jpg" class="img-responsive" />
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="container-fluid mt-4">
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <img src="~/fwdbanners/04.jpg" width="100%" height="450px;" />
+                                        </div>
+
+                                        <ul class="row list-unstyled products-group no-gutters">
+
+                                            @foreach (var item in Model.Cosmetic)
+                                            {
+                                                <li class=" col-wd-2gdot4 product-item" style="display: inline;width: 220px;">
+
+                                                    <div class="product-item__outer h-100">
+
+                                                        <div class="product-item__inner px-xl-4 p-3">
+                                                            <div class="product-item__body pb-xl-2">
+                                                                <a class="font-size-12 text-gray-5"> </a>
+                                                                <div class="mb-2">
+                                                                    <a href="@Url.Action("SingleProduct","Shop",new { id = item.Id})" class="font-size-12 text-gray-5">@Html.DisplayFor(mod => item.CategoryName)</a>
+                                                                </div>
+                                                                <h1 class="product-item__title text-blue font-weight-bold"> </h1>
+                                                                <h5 class="mb-1 product-item__title">
+                                                                    <a href="@Url.Action("SingleProduct","Shop",new { id = item.Id})" class="text-blue font-weight-bold">@Html.DisplayFor(mod => item.ProductName)</a>
+                                                                </h5>
+                                                                <div class="mb-2">
+                                                                    <a href="@Url.Action("SingleProduct","Shop",new { id = item.Id})" class="d-block text-center">
+                                                                        <img class="img-fluid" src="../ProductImages/@item.ImagePath1" alt="Image Description" style="height: 220px;">
+                                                                    </a>
+                                                                </div>
+                                                                <label class="font-size-12 p-0 text-gray-110 mb-4"></label>
+                                                                <ul class="font-size-12 p-0 text-gray-110 mb-4">
+                                                                    <li class="line-clamp-1 mb-1 list-bullet">@Html.DisplayFor(mod => item.Category)</li>
+
+                                                                </ul>
+                                                                <div class="text-gray-20 mb-2 font-size-12">@Html.DisplayFor(mod => item.Price)</div>
+                                                                <div class="flex-center-between mb-1">
+                                                                    <div class="prodcut-price">
+
+
+                                                                    </div>
+                                                                    <div class="d-none d-xl-block prodcut-add-cart">
+
+                                                                        @Html.ActionLink(".", "SingleProduct", "Shop", new { id = item.Id }, new { @class = " ec ec-add-to-cart btn-add-cart btn-primary transition-3d-hover" })
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="product-item__footer">
+                                                                <div class="border-top pt-2 flex-center-between flex-wrap">
+                                                                    <span> @Html.ActionLink("Wishlist", "WishList", "Shop", new { id = item.Id }, new { @class = "text-gray-6 font-size-13 " })</span>
+                                                                    <i class="ec ec-favorites mr-1 font-size-15"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </li>
+                                            }
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- End Television Entertainment -->
+                    <!-- Products-8-1 -->
+                    <!-- End Products-8-1 -->
+                    <div class="container">
+                        <!-- Top Categories this Month -->
+                        <!-- End Top Categories this Month -->
+                        <!-- Recommendation for you -->
+                        @*<div class="position-relative">
+                            <div class="border-bottom border-color-1 mb-2">
+                                <h3 class="section-title section-title__full d-inline-block mb-0 pb-2 font-size-22">Recommendation for you</h3>
+                            </div>
+                            <div class="js-slick-carousel u-slick position-static overflow-hidden u-slick-overflow-visble pb-7 pt-2 px-1"
+                                 data-pagi-classes="text-center right-0 bottom-1 left-0 u-slick__pagination u-slick__pagination--long mb-0 z-index-n1 mt-3 mt-md-0"
+                                 data-slides-show="7"
+                                 data-slides-scroll="1"
+                                 data-arrows-classes="position-absolute top-0 font-size-17 u-slick__arrow-normal top-10"
+                                 data-responsive='[
+                     {
+                          "breakpoint": 1400,
+                          "settings": {
+                            "slidesToShow": 6
+                          }
+
+                        }]'>
+                                @foreach (var item in Model.Shuffleproducts)
+                                {
+                                    <div class="js-slide products-group">
+                                        <div class="product-item">
+                                            <div class="product-item__outer h-100 w-100">
+                                                <div class="product-item__inner px-wd-4 p-2 p-md-3">
+                                                    <div class="product-item__body pb-xl-2">
+                                                        <div class="mb-2">
+                                                            <a href="@Url.Action("SingleProduct","Shop",new { id = item.Id})" class="font-size-12 text-gray-5"></a>@Html.DisplayFor(mod => item.CategoryName)
+                                                        </div>
+                                                        <h5 class="mb-1 product-item__title">
+                                                            <a href="@Url.Action("SingleProduct","Shop",new { id = item.Id})" class="text-blue font-weight-bold">@Html.DisplayFor(mod => item.ProductName)</a>
+                                                        </h5>
+                                                        <div class="mb-2">
+                                                            <a href="@Url.Action("SingleProduct","Shop",new { id = item.Id})" class="d-block text-center"><img class="img-fluid" src="../ProductImages/@item.ImagePath1" alt="Image Description"></a>
+                                                        </div>
+                                                        <div class="flex-center-between mb-1">
+                                                            <div class="prodcut-price">
+                                                                <div class="text-gray-100">@Html.DisplayFor(mod => item.Price)</div>
+                                                            </div>
+                                                            <div class="d-none d-xl-block prodcut-add-cart">
+                                                                @Html.ActionLink(".", "SingleProduct", "Shop", new { id = item.Id }, new { @class = " ec ec-add-to-cart btn-add-cart btn-primary transition-3d-hover" })
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-item__footer">
+                                                        <div class="border-top pt-2 flex-center-between flex-wrap">
+                                                            <span> @Html.ActionLink("Wishlist", "WishList", "Shop", new { id = item.Id }, new { @class = "text-gray-6 font-size-13 " })</span>
+                                                            <i class="ec ec-favorites mr-1 font-size-15"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+
+
+
+                            </div>
+                        </div>*@
+                        <!-- End Recommendation for you -->
+                        <!-- Banner 2 columns -->
+                        <div class="mb-8">
+                            <div class="row">
+                                <div class="col-md-6 mb-3 mb-md-0">
+                                    <a href="../shop/shop.html">
+                                        <img class="img-fluid" src="~/fwdbanners/1.jpg" />
+                                    </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="../shop/shop.html">
+                                        <img class="img-fluid" src="~/fwdbanners/2.jpg" />"
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Banner 2 columns -->
+                    </div>
+                    <!-- Brand Carousel -->
+                    <div class="container mb-8">
+
+                    </div>
+                    <!-- End Brand Carousel -->
+</main>
+
+<div class="successmsg" style="display:none;">
+    @Session["msg"]
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="~/Content/PopUp/notiflix-aio-2.7.0.min.js"></script>
+<script>
+    $(document).ready(function () {        
+        var msg = $(".successmsg").text().trim();
+        debugger;
+        if (msg == 'success') {
+            Notiflix.Report.Warning();
+            $(".notiflix-report-title").text("login first");
+            $(".notiflix-report-message").text("");
+            $(".notiflix-report-overlay").css({ "background": "rgba(255,255,255, 0.7)", "animation-duration": "360ms;" });
+            $("#NXReportButton").hide();
+          mytimer();
+        }
+        var timeleft = 1;
+        function mytimer() {
+            var downloadTimer = setInterval(function () {
+                if (timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    $("#NotiflixReportWrap").fadeOut();
+                    $.ajax({
+                        type: "POST",
+                        url: '/MyOrder/resetSession',
+                        contentType: "application/json; charset=utf-8",
+                        success: function (r) {
+                        }
+                    });
+                } else {
+
+                }
+                timeleft -= 1;
+            }, 1000);
+        }
+    });
+</script>
+
+<script>
+
+
+    function AddToCart(ProductId) {
+        var PProductId = parseInt(ProductId);
+        $.ajax({
+            url: "/Cart/AddToCart/",
+            type: "POST",
+            contentType: "application/json;charset=utf-8",
+            dataType: "json",
+            data: JSON.stringify({ ProductId: PProductId}),
+            success: function (result) {
+                debugger;
+                console.log(result.status);
+                if (result.status == "success") {
+                    Notiflix.Report.Success();
+                    $("#NotiflixReportWrap").fadeIn();
+                    $(".notiflix-report-title").text("Item added in cart");
+                    $(".notiflix-report-message").text("");
+                    $(".notiflix-report-overlay").css({ "background": "rgba(255,255,255, 0.7)", "animation-duration": "360ms;" });
+                    $("#NXReportButton").hide();
+                    mytimer();                    
+                }                              
+            },
+            error: function (errormessage) {
+            }
+        });
+
+        var timeleft = 1;
+        function mytimer() {
+            var downloadTimer = setInterval(function () {
+                if (timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    $("#NotiflixReportWrap").fadeOut();
+
+                } else {
+
+                }
+                timeleft -= 1;
+            }, 1000);
+        }
+    }
+  
+</script>

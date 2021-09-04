@@ -1,0 +1,73 @@
+﻿@model IEnumerable<Bring.Models.MonthlyReport>
+
+@{
+    ViewBag.Title = "OrderDetails";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+
+
+<section class="body">
+    <header class="panel-heading">
+        <div class="panel-actions">
+            <input type="text" class="form-control" id="searchname" name="q" placeholder="Search" />
+        </div>
+
+        <h2 class="panel-title">Orders Details</h2>
+    </header>
+    <div class="panel-body">
+        <div class="table-responsive">
+            <table class="table table-striped mb-none">
+
+                <tr style="font-size:small">
+                    <th>Id</th>
+                    <th>Date</th>
+                    <th>Address</th>
+                    <th>Product Name</th>
+                    <th>Quantity</th>
+                    <th>Amount</th>
+                    @*<th>State</th>
+                    <th>Street Address</th>
+                    <th>Post Code</th>
+                    <th>Phone No</th>
+                    <th>Email Address</th>
+                    <th>Payment Method</th>
+                    <th>Total Price</th>
+                    <th>Status</th>
+                    <th>Date</th>
+                    <th>Vendor Profile</th>*@
+
+
+                </tr>
+
+                @foreach (var item in Model)
+                {
+            <tr style="font-size:small">
+                <td><span id="lblid">@Html.DisplayFor(mod => item.Id)</span></td>
+                <td>@Html.DisplayFor(mod => item.Date)</td>
+                <td>@Html.DisplayFor(mod => item.Address)</td>
+                <td>@Html.DisplayFor(mod => item.ProductName)</td>
+                <td>@Html.DisplayFor(mod => item.Quantity)</td>
+                <td>@Html.DisplayFor(mod => item.Amount)</td>
+                @*<td>@Html.DisplayFor(mod => item.State)</td>*@
+                
+                @*<td>@Html.DisplayFor(mod => item.StreetAdress)</td>
+                <td>@Html.DisplayFor(mod => item.PostCode)</td>
+                <td>@Html.DisplayFor(mod => item.PhoneNo)</td>
+                <td>@Html.DisplayFor(mod => item.EmailAddress)</td>
+                <td>@Html.DisplayFor(mod => item.PaymentMethod)</td>
+                <td>@Html.DisplayFor(mod => item.TotalPrice)</td>
+                <td>@Html.DisplayFor(mod => item.Status)</td>
+                <td>@Html.DisplayFor(mod => item.Date)</td>*@
+                
+                @*<td class="actions">@Html.ActionLink(".", "ViewProfile", "Vendor", new { id = item.Id }, new { @class = "fa fa-pencil" })</td>*@
+            </tr>
+                }
+
+
+
+            </table>
+        </div>
+    </div>
+</section>
+

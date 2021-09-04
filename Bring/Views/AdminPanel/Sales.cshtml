@@ -1,0 +1,93 @@
+﻿@model IEnumerable<Bring.Models.MonthlyReport>
+
+@{
+    ViewBag.Title = "Sales";
+    Layout = "~/Views/Shared/_Layout3.cshtml";
+}
+
+<section class="body">
+    <header class="panel-heading">
+        @using (Html.BeginForm("SearchMonth", "AdminPanel", FormMethod.Post))
+        {
+            <div class="panel-actions">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <input type="text" id="vendorId" name="vendorId" class="form-control" />
+                    </div>
+                    <div class="col-sm-3">
+                        @Html.DropDownList("Month", new List<SelectListItem>
+                            {
+                            new SelectListItem() {Text = "Select Month", Value=""},
+                            new SelectListItem() {Text = "January", Value="January"},
+                            new SelectListItem() {Text = "February", Value="February"},
+                            new SelectListItem() {Text = "March", Value="March"},
+                            new SelectListItem() {Text = "April", Value="April"},
+                            new SelectListItem() {Text = "May", Value="May"},
+                            new SelectListItem() {Text = "June", Value="June"},
+                            new SelectListItem() {Text = "July", Value="July"},
+                            new SelectListItem() {Text = "July", Value="July"},
+                            new SelectListItem() {Text = "August", Value="August"},
+                            new SelectListItem() {Text = "September", Value="September"},
+                            new SelectListItem() {Text = "October", Value="October"},
+                            new SelectListItem() {Text = "November", Value="November"},
+                            new SelectListItem() {Text = "December", Value="December"}, },
+                            new { @class = "form-control" })
+                    </div>
+                    <div class="col-sm-2"> <input type="submit" class="btn btn search-field" value="Enter" /></div>
+                </div>
+            </div>
+        }
+
+        <h2 class="panel-title">Sales Total</h2>
+
+
+    </header>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-sm-5"></div>
+            <div class="total col-sm-4" style="">
+                <br>
+                <h5>total</h5>
+                <input type="text" name="total" placeholder="total" value="@ViewBag.totalSales" class=" form-control" readonly style="width: 200px;">
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+        <br>
+        <div class="table-responsive">
+            <table class="table table-striped mb-none">
+
+                <tr style="font-size:small">
+                    <th>Vendor Id</th>
+                    <th>Product Name</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Month</th>
+                    <th>Quantity</th>
+
+
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    
+                    <tr id="Se" style="font-size:small">
+                        @Html.HiddenFor(mod => item.Id)
+                        <td><span class="Se"></span>@Html.DisplayFor(mod=>item.VendorId)</td>
+                        <td>@Html.DisplayFor(mod => item.ProductName)</td>
+                        <td>@Html.DisplayFor(mod => item.Date)</td>
+                        <td>@Html.DisplayFor(mod => item.Amount)</td>
+                        <td>@Html.DisplayFor(mod => item.Month)</td>
+                        <td>@Html.DisplayFor(mod => item.Quantity)</td>
+                    </tr>
+                }
+
+
+
+
+
+            </table>
+        </div>
+    </div>
+</section>
+
+

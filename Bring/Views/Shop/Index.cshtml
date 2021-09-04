@@ -1,0 +1,259 @@
+﻿@model Bring.Models.ShopProduct
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<main id="content" role="main">
+    <!-- breadcrumb -->
+    <div class="bg-gray-13 bg-md-transparent">
+        <div class="container">
+            <!-- breadcrumb -->
+            <div class="my-md-3">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-3 flex-nowrap flex-xl-wrap overflow-auto overflow-xl-visble">
+                        <li class="breadcrumb-item flex-shrink-0 flex-xl-shrink-1"><a href="../home/index.html">Home</a></li>
+                        <li class="breadcrumb-item flex-shrink-0 flex-xl-shrink-1 active" aria-current="page">Shop</li>
+                    </ol>
+                </nav>
+            </div>
+            <!-- End breadcrumb -->
+        </div>
+    </div>
+    <!-- End breadcrumb -->
+    <div class="container">
+        <div class="row mb-8">
+            <div class="d-none d-xl-block col-xl-3 col-wd-2gdot5">
+                <div class="mb-8 border border-width-2 border-color-3 borders-radius-6">
+                    <!-- List -->
+                    <ul id="sidebarNav" class="list-unstyled mb-0 sidebar-navbar">
+                        <li>
+                            <a class="dropdown-toggle dropdown-toggle-collapse dropdown-title" href="javascript:;" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="sidebarNav1Collapse" data-target="#sidebarNav1Collapse">
+                                Show All Categories
+                            </a>
+
+                            <div id="sidebarNav1Collapse" class="collapse" data-parent="#sidebarNav">
+                                <ul id="sidebarNav1" class="list-unstyled dropdown-list text-center">
+                                    <!-- Menu List -->
+                                    <li><a>@Html.ActionLink("Chips & Snacks", "Category", "Shop", new { param = "ChipsAndSnacks" }, new { @class = "dropdown-item" })</a></li>
+                                    <li><a class="dropdown-item">@Html.ActionLink("Butchery & BBQ", "Category", "Shop", new { param = "ButcheryAndBBQ" }, new { @class = "dropdown-item" })</a></li>
+                                    <li><a class="dropdown-item">@Html.ActionLink("Chocolate & Candies", "Category", "Shop", new { param = "ChocolateAndCandies" }, new { @class = "dropdown-item" })</a></li>
+                                    <li><a class="dropdown-item">@Html.ActionLink("Ice Creams", "Category", "Shop", new { param = "IceCreams" }, new { @class = "dropdown-item" })</a></li>
+                                    <li><a class="dropdown-item">@Html.ActionLink("Tea & Coffee", "Category", "Shop", new { param = "TeaAndCoffee" }, new { @class = "dropdown-item" })</a></li>
+                                    <li><a class="dropdown-item">@Html.ActionLink("Oils,Vinegar & More", "Category", "Shop", new { param = "OilsVinegarAndMore" }, new { @class = "dropdown-item" })</a></li>
+                                    <li><a class="dropdown-item">@Html.ActionLink("Soft Drinks & Juices", "Category", "Shop", new { param = "SoftDrinksAndJuices" }, new { @class = "dropdown-item" })</a></li>
+                                    <li><a class="dropdown-item">@Html.ActionLink("Rice,Flour & More", "Category", "Shop", new { param = "RiceFlourAndMore" }, new { @class = "dropdown-item" })</a></li>
+                                    <li><a class="dropdown-item">@Html.ActionLink("Cheese & Spreads", "Category", "Shop", new { param = "CheeseAndSpreads" }, new { @class = "dropdown-item" })</a></li>
+                                    <li><a class="dropdown-item">@Html.ActionLink("Fresh Fruits", "Category", "Shop", new { param = "FreshFruits" }, new { @class = "dropdown-item" })</a></li>
+                                    <li><a class="dropdown-item">@Html.ActionLink("Fresh Vegetables", "Category", "Shop", new { param = "FreshVegetables" }, new { @class = "dropdown-item" })</a></li>
+                                    <li><a class="dropdown-item">@Html.ActionLink("Cakes & Desserts", "Category", "Shop", new { param = "CakesAndDesserts" }, new { @class = "dropdown-item" })</a></li>
+                                    <li><a class="dropdown-item">@Html.ActionLink("Cookies", "Category", "Shop", new { param = "Cookies" }, new { @class = "dropdown-item" })</a></li>
+                                    <li><a class="dropdown-item">@Html.ActionLink("Meat & Fish", "Category", "Shop", new { param = "MeatAndFish" }, new { @class = "dropdown-item" })</a></li>
+                                    <li><a class="dropdown-item">@Html.ActionLink("Vegan & Vegetarian", "Category", "Shop", new { param = "VeganAndVegetarian" }, new { @class = "dropdown-item" })</a></li>
+                                    <li><a class="dropdown-item">@Html.ActionLink("Snacks & Sweets", "Category", "Shop", new { param = "SnacksAndSweetss" }, new { @class = "dropdown-item" })</a></li>
+                                    <li><a class="dropdown-item">@Html.ActionLink("Cereal & Packets", "Category", "Shop", new { param = "CerealAndPackets" }, new { @class = "dropdown-item" })</a></li>
+                                    <li><a class="dropdown-item">@Html.ActionLink("Pasta, Rice & Grain", "Category", "Shop", new { param = "PastaRiceAndGrain" }, new { @class = "dropdown-item" })</a></li>
+                                    <li><a class="dropdown-item">@Html.ActionLink("Nuts and Seeds", "Category", "Shop", new { param = "NutsAndSeeds" }, new { @class = "dropdown-item" })</a></li>
+                                    <li><a class="dropdown-item">@Html.ActionLink("Shampoo & Soap", "Category", "Shop", new { param = "ShampooAndSoap" }, new { @class = "dropdown-item" })</a></li>
+                                    <li><a class="dropdown-item">@Html.ActionLink("Mascaras & Eyebrows", "Category", "Shop", new { param = "MascarasAndEyebrows" }, new { @class = "dropdown-item" })</a></li>
+                                    <li><a class="dropdown-item">@Html.ActionLink("Eye Liners", "Category", "Shop", new { param = "EyeLiners" }, new { @class = "dropdown-item" })</a></li>
+                                    <li><a class="dropdown-item">@Html.ActionLink("MakeUp Palette", "Category", "Shop", new { param = "MakeUpPalette" }, new { @class = "dropdown-item" })</a></li>
+                                    <li><a class="dropdown-item">@Html.ActionLink("MakeUp Kits", "Category", "Shop", new { param = "MakeUpKits" }, new { @class = "dropdown-item" })</a></li>
+                                    <li><a class="dropdown-item">@Html.ActionLink("Concealers & Foundations", "Category", "Shop", new { param = "ConcealersAndFoundations" }, new { @class = "dropdown-item" })</a></li>
+                                    <li><a class="dropdown-item">@Html.ActionLink("Setting Sprays & Powders", "Category", "Shop", new { param = "SettingSpraysAndPowders" }, new { @class = "dropdown-item" })</a></li>
+                                    <li><a class="dropdown-item">@Html.ActionLink("Blushes & Bronzers", "Category", "Shop", new { param = "BlushesAndBronzers" }, new { @class = "dropdown-item" })</a></li>
+                                    <li><a class="dropdown-item">@Html.ActionLink("Bases & Primers", "Category", "Shop", new { param = "BasesAndPrimer" }, new { @class = "dropdown-item" })</a></li>
+                                    <li><a class="dropdown-item">@Html.ActionLink("Eye Shadows", "Category", "Shop", new { param = "EyeShadows" }, new { @class = "dropdown-item" })</a></li>
+                                    <li><a class="dropdown-item">@Html.ActionLink("Highlights & Contours", "Category", "Shop", new { param = "HighlightsAndContours" }, new { @class = "dropdown-item" })</a></li>
+                                    <li><a class="dropdown-item">@Html.ActionLink("Facial Care", "Category", "Shop", new { param = "FacialCare" }, new { @class = "dropdown-item" })</a></li>
+                                    <li><a class="dropdown-item">@Html.ActionLink("MakeUp Removers", "Category", "Shop", new { param = "MakeUpRemovers" }, new { @class = "dropdown-item" })</a></li>
+                                    <li><a class="dropdown-item">@Html.ActionLink("Nails Extension", "Category", "Shop", new { param = "Nails" }, new { @class = "dropdown-item" })</a></li>
+                                    <li><a class="dropdown-item">@Html.ActionLink("Nails", "Category", "Shop", new { param = "NailsExtension" }, new { @class = "dropdown-item" })</a></li>
+                                    <li><a class="dropdown-item">@Html.ActionLink("Frozen Foods", "Category", "Shop", new { param = "FrozenFoods" }, new { @class = "dropdown-item" })</a></li>
+                                    <li><a class="dropdown-item">@Html.ActionLink("Prepaid Cards", "Category", "Shop", new { param = "PrepaidCards" }, new { @class = "dropdown-item" })</a></li>
+                                    <li><a class="dropdown-item">@Html.ActionLink("Tobacco", "Category", "Shop", new { param = "Tobacco" }, new { @class = "dropdown-item" })</a></li>
+                                    <li><a class="dropdown-item">@Html.ActionLink("Water", "Category", "Shop", new { param = "Water" }, new { @class = "dropdown-item" })</a></li>
+                                    <li><a class="dropdown-item"></a></li>
+
+                                   <!-- End Menu List -->
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <!-- End List -->
+                </div>
+                <div class="mb-6">
+                    <div class="border-bottom border-color-1 mb-5">
+                        <h3 class="section-title section-title__sm mb-0 pb-2 font-size-18">Filters</h3>
+                    </div>
+                   
+                    @using (Html.BeginForm("RangeSlider", "Shop", FormMethod.Post))
+                    {
+
+                        <div class="range-slider">
+                            <h4 class="font-size-14 mb-3 font-weight-bold">Price</h4>
+                            <!-- Range Slider -->
+                            <style>
+                                .u-range-slider .irs-slider {
+                                    border: 7px solid yellow;
+                                }
+
+                                    .u-range-slider .irs-slider.to {
+                                        border: 7px solid yellow;
+                                    }
+                            </style>
+                            <input class="js-range-slider" type="text"
+                                   data-extra-classes="u-range-slider u-range-slider-indicator u-range-slider-grid"
+                                   data-type="double"
+                                   data-grid="false"
+                                   data-hide-from-to="true"
+                                   data-prefix="$"
+                                   data-min="0"
+                                   data-max="3456"
+                                   data-from="0"
+                                   data-to="3456"
+                                   data-result-min="#ViewMin"
+                                   data-result-max="#ViewMax" />
+                            <!-- End Range Slider -->
+                            <div class="mt-1 text-gray-111 d-flex mb-4">
+                                <span class="mr-0dot5">Price: </span>
+                                <span>Rs</span>
+                                <span style="width:30px"><input type="text" id="ViewMin" style="border:none;" reado name="ViewMin" /></span>
+                                <span class="mx-0dot5"> —  </span>
+                                <span>Rs</span>
+                                <span><input type="text" id="ViewMax" style="border:none;" readonly name="ViewMax" /></span>
+                            </div>
+                            <button type="submit" class="btn px-4 btn-primary-dark-w py-2 rounded-lg">Filter</button>
+                        </div>
+                    }
+                </div>
+
+                <div class="mb-8">
+                    <div class="border-bottom border-color-1 mb-5">
+                        <h3 class="section-title section-title__sm mb-0 pb-2 font-size-18">Latest Products</h3>
+                    </div>
+                    <ul class="list-unstyled">
+                        @foreach (var latest in Model.latestProduct)
+
+                        {
+                            <li class="mb-4">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <a href="../shop/single-product-fullwidth.html" class="d-block width-75">
+                                            <img class="img-fluid" @*src="@latest.ImageContentType"*@ alt="Image Description">
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <h3 class="text-lh-1dot2 font-size-14 mb-0">@latest.ProductName</h3>
+                                        <div class="font-weight-bold">
+                                            <ins class="font-size-11 text-gray-9 d-block">@latest.CategoryName</ins>
+                                            <ins class="font-size-15 text-red text-decoration-none d-block">@latest.Price</ins>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-xl-9 col-wd-9gdot5" style="margin-top:-30px;">
+                <!-- Shop-control-bar Title -->
+                <div class="d-block d-md-flex flex-center-between mb-3">
+                    <h3 class="font-size-25 mb-2 mb-md-0">Shop</h3>
+                </div>
+                <div class="bg-gray-1 flex-center-between borders-radius-9 py-1">
+                    <div class="d-xl-none">
+                        <!-- Account Sidebar Toggle Button -->
+                        <a id="sidebarNavToggler1" class="btn btn-sm py-1 font-weight-normal" href="javascript:;" role="button"
+                           aria-controls="sidebarContent1"
+                           aria-haspopup="true"
+                           aria-expanded="false"
+                           data-unfold-event="click"
+                           data-unfold-hide-on-scroll="false"
+                           data-unfold-target="#sidebarContent1"
+                           data-unfold-type="css-animation"
+                           data-unfold-animation-in="fadeInLeft"
+                           data-unfold-animation-out="fadeOutLeft"
+                           data-unfold-duration="500">
+                            <i class="fas fa-sliders-h"></i> <span class="ml-1">Filters</span>
+                        </a>
+                        <!-- End Account Sidebar Toggle Button -->
+                    </div>
+                    <div class="px-3 d-none d-xl-block">
+                        <ul class="nav nav-tab-shop" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <div class="d-flex">
+                                    @using (Html.BeginForm("Index", "Shop", FormMethod.Post))
+                                    {
+                                        <div class="col d-none d-xl-block">
+                                            <form class="js-focus-state">
+                                                <label class="sr-only" for="searchproduct">Search</label>
+                                                <div class="input-group">
+                                                    @Html.TextBox("SearchProduct", "", new { @class = "form-control py-2 pl-5 font-size-15 border-right-0 height-42 border-width-0 rounded-left-pill border-primary", @placeholder = "Search For Product", @style = "width:723px;" })
+                                                    <div class="input-group-append">
+                                                        <input type="submit" class="btn btn-dark height-42 py-2 px-3 rounded-right-pill " value="Search" />                                                    
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    }
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade pt-2 show active" id="pills-two-example1" role="tabpanel" aria-labelledby="pills-two-example1-tab" data-target-group="groups">
+                        <ul class="row list-unstyled products-group no-gutters">
+                            @foreach (var item in Model.product)
+                            {
+                                <li class="col-6 col-md-3 col-wd-2gdot4 product-item">
+                                    <div class="product-item__outer h-100">
+                                        <div class="product-item__inner px-xl-4 p-3">
+                                            <div class="product-item__body pb-xl-2">
+                                                <a class="font-size-12 text-gray-5"> @Html.DisplayFor(mod => item.CategoryName, new { @class = "mb-2" })</a>
+                                                <h1 class="product-item__title text-blue font-weight-bold"> @Html.DisplayFor(mod => item.ProductName, new { @class = "text-blue font-weight-bold" })</h1>                                             
+                                                <div class="mb-2">
+                                                    <a href="@Url.Action("SingleProduct","Shop",new { id = item.Id})" class="d-block text-center">
+                                                        <img class="img-fluid" @*src="@item.ImageContentType"*@ alt="Image Description">
+                                                    </a>
+                                                </div>
+                                                <label class="font-size-12 p-0 text-gray-110 mb-4">@Html.DisplayFor(mod => item.Email, new { @class = "font-size-12 p-0 text-gray-110 mb-4" })</label>
+                                                <div class="flex-center-between mb-1">
+                                                    <div class="prodcut-price">
+                                                        @Html.DisplayFor(mod => item.Price, new { @class = "text-gray-100" })
+
+                                                    </div>
+                                                    <div class="d-none d-xl-block prodcut-add-cart">
+                                                        @Html.ActionLink(".", "SingleProduct", "Shop", new { id = item.Id }, new { @class = " ec ec-add-to-cart btn-add-cart btn-primary transition-3d-hover" })
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="product-item__footer">
+                                                <div class="border-top pt-2 flex-center-between flex-wrap">
+                                                    <span> @Html.ActionLink("Wishlist", "WishList", "Shop", new { id = item.Id }, new { @class = "text-gray-6 font-size-13 " })</span><i class="ec ec-favorites mr-1 font-size-15"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                </div>               
+                <!-- End Shop Pagination -->
+            </div>
+        </div>
+        
+        <!-- End Brand Carousel -->
+    </div>
+</main>
+
+

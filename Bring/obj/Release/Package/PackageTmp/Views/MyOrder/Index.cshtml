@@ -1,0 +1,54 @@
+﻿@model IEnumerable<Bring.Models.OrdersModel>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br>
+<br />
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 text-center" style="color:#333E48 ;">
+            <h1 style="color:#333E48">My Orders</h1>
+            <br>
+            <br>
+            <table class="table table-hover ">
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">Street Address</th>
+                        <th scope="col">City</th>
+                        <th scope="col">Phone No</th>
+                        <th scope="col">Email Address</th>
+
+                        <th scope="col">Total Price</th>
+                        <th scope="col">Date</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@Html.DisplayFor(mod => item.Id)</td>
+                            <td>@Html.DisplayFor(mod => item.FirstName)</td>
+                            <td>@Html.DisplayFor(mod => item.LastName)</td>
+                            <td>@Html.DisplayFor(mod => item.StreetAdress)</td>
+                            <td>@Html.DisplayFor(mod => item.City)</td>
+                            <td>@Html.DisplayFor(mod => item.PhoneNo)</td>
+                            <td>@Html.DisplayFor(mod => item.EmailAddress)</td>
+                            <td>@Html.DisplayFor(mod => item.TotalPrice)</td>
+                            <td>@Html.DisplayFor(mod => item.Date)</td>
+
+                        </tr>
+                    }
+
+
+            </table>
+        </div>
+    </div>
+</div>
+<br />
+<br />
+

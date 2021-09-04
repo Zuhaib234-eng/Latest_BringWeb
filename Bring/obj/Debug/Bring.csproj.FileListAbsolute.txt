@@ -1,0 +1,326 @@
+C:\Users\uxaif\source\repos\Bring\Bring\bin\Bring.dll.config
+C:\Users\uxaif\source\repos\Bring\Bring\bin\Bring.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\Bring.pdb
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\csc.exe
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\csc.exe.config
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\csc.rsp
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\csi.exe
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\csi.exe.config
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\csi.rsp
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\System.AppContext.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\System.Console.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\System.IO.Compression.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\System.Net.Http.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\System.Net.Sockets.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\System.ValueTuple.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\System.Xml.XPath.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\vbc.exe
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\vbc.exe.config
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\vbc.rsp
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\VBCSCompiler.exe
+C:\Users\uxaif\source\repos\Bring\Bring\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\uxaif\source\repos\Bring\Bring\bin\Antlr3.Runtime.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\Newtonsoft.Json.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\System.Net.Http.Formatting.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\System.Web.Helpers.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\System.Web.Mvc.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\System.Web.Optimization.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\System.Web.Razor.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\System.Web.WebPages.Deployment.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\System.Web.WebPages.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\System.Web.WebPages.Razor.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\WebGrease.dll
+C:\Users\uxaif\source\repos\Bring\Bring\bin\System.Net.Http.Formatting.xml
+C:\Users\uxaif\source\repos\Bring\Bring\bin\System.Web.Helpers.xml
+C:\Users\uxaif\source\repos\Bring\Bring\bin\System.Web.Mvc.xml
+C:\Users\uxaif\source\repos\Bring\Bring\bin\System.Web.Optimization.xml
+C:\Users\uxaif\source\repos\Bring\Bring\bin\System.Web.Razor.xml
+C:\Users\uxaif\source\repos\Bring\Bring\bin\System.Web.WebPages.xml
+C:\Users\uxaif\source\repos\Bring\Bring\bin\System.Web.WebPages.Deployment.xml
+C:\Users\uxaif\source\repos\Bring\Bring\bin\System.Web.WebPages.Razor.xml
+C:\Users\uxaif\source\repos\Bring\Bring\bin\Newtonsoft.Json.xml
+C:\Users\uxaif\source\repos\Bring\Bring\bin\Antlr3.Runtime.pdb
+C:\Users\uxaif\source\repos\Bring\Bring\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\uxaif\source\repos\Bring\Bring\obj\Debug\Bring.csproj.CopyComplete
+C:\Users\uxaif\source\repos\Bring\Bring\obj\Debug\Bring.dll
+C:\Users\uxaif\source\repos\Bring\Bring\obj\Debug\Bring.pdb
+D:\laptop data\Bring\Bring\bin\Bring.dll.config
+D:\laptop data\Bring\Bring\bin\Bring.dll
+D:\laptop data\Bring\Bring\bin\Bring.pdb
+D:\laptop data\Bring\Bring\bin\roslyn\csc.exe
+D:\laptop data\Bring\Bring\bin\roslyn\csc.exe.config
+D:\laptop data\Bring\Bring\bin\roslyn\csc.rsp
+D:\laptop data\Bring\Bring\bin\roslyn\csi.exe
+D:\laptop data\Bring\Bring\bin\roslyn\csi.exe.config
+D:\laptop data\Bring\Bring\bin\roslyn\csi.rsp
+D:\laptop data\Bring\Bring\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\laptop data\Bring\Bring\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\laptop data\Bring\Bring\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\laptop data\Bring\Bring\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\laptop data\Bring\Bring\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\laptop data\Bring\Bring\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\laptop data\Bring\Bring\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\laptop data\Bring\Bring\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\laptop data\Bring\Bring\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\laptop data\Bring\Bring\bin\roslyn\Microsoft.Managed.Core.targets
+D:\laptop data\Bring\Bring\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\laptop data\Bring\Bring\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\laptop data\Bring\Bring\bin\roslyn\System.AppContext.dll
+D:\laptop data\Bring\Bring\bin\roslyn\System.Collections.Immutable.dll
+D:\laptop data\Bring\Bring\bin\roslyn\System.Console.dll
+D:\laptop data\Bring\Bring\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\laptop data\Bring\Bring\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\laptop data\Bring\Bring\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\laptop data\Bring\Bring\bin\roslyn\System.Globalization.Calendars.dll
+D:\laptop data\Bring\Bring\bin\roslyn\System.IO.Compression.dll
+D:\laptop data\Bring\Bring\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\laptop data\Bring\Bring\bin\roslyn\System.IO.FileSystem.dll
+D:\laptop data\Bring\Bring\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\laptop data\Bring\Bring\bin\roslyn\System.Net.Http.dll
+D:\laptop data\Bring\Bring\bin\roslyn\System.Net.Sockets.dll
+D:\laptop data\Bring\Bring\bin\roslyn\System.Reflection.Metadata.dll
+D:\laptop data\Bring\Bring\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\laptop data\Bring\Bring\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\laptop data\Bring\Bring\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\laptop data\Bring\Bring\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\laptop data\Bring\Bring\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\laptop data\Bring\Bring\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\laptop data\Bring\Bring\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\laptop data\Bring\Bring\bin\roslyn\System.ValueTuple.dll
+D:\laptop data\Bring\Bring\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\laptop data\Bring\Bring\bin\roslyn\System.Xml.XmlDocument.dll
+D:\laptop data\Bring\Bring\bin\roslyn\System.Xml.XPath.dll
+D:\laptop data\Bring\Bring\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\laptop data\Bring\Bring\bin\roslyn\vbc.exe
+D:\laptop data\Bring\Bring\bin\roslyn\vbc.exe.config
+D:\laptop data\Bring\Bring\bin\roslyn\vbc.rsp
+D:\laptop data\Bring\Bring\bin\roslyn\VBCSCompiler.exe
+D:\laptop data\Bring\Bring\bin\roslyn\VBCSCompiler.exe.config
+D:\laptop data\Bring\Bring\bin\Antlr3.Runtime.dll
+D:\laptop data\Bring\Bring\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\laptop data\Bring\Bring\bin\Microsoft.Web.Infrastructure.dll
+D:\laptop data\Bring\Bring\bin\Newtonsoft.Json.dll
+D:\laptop data\Bring\Bring\bin\System.Net.Http.Formatting.dll
+D:\laptop data\Bring\Bring\bin\System.Web.Helpers.dll
+D:\laptop data\Bring\Bring\bin\System.Web.Mvc.dll
+D:\laptop data\Bring\Bring\bin\System.Web.Optimization.dll
+D:\laptop data\Bring\Bring\bin\System.Web.Razor.dll
+D:\laptop data\Bring\Bring\bin\System.Web.WebPages.Deployment.dll
+D:\laptop data\Bring\Bring\bin\System.Web.WebPages.dll
+D:\laptop data\Bring\Bring\bin\System.Web.WebPages.Razor.dll
+D:\laptop data\Bring\Bring\bin\WebGrease.dll
+D:\laptop data\Bring\Bring\bin\System.Net.Http.Formatting.xml
+D:\laptop data\Bring\Bring\bin\System.Web.Helpers.xml
+D:\laptop data\Bring\Bring\bin\System.Web.Mvc.xml
+D:\laptop data\Bring\Bring\bin\System.Web.Optimization.xml
+D:\laptop data\Bring\Bring\bin\System.Web.Razor.xml
+D:\laptop data\Bring\Bring\bin\System.Web.WebPages.xml
+D:\laptop data\Bring\Bring\bin\System.Web.WebPages.Deployment.xml
+D:\laptop data\Bring\Bring\bin\System.Web.WebPages.Razor.xml
+D:\laptop data\Bring\Bring\bin\Newtonsoft.Json.xml
+D:\laptop data\Bring\Bring\bin\Antlr3.Runtime.pdb
+D:\laptop data\Bring\Bring\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\laptop data\Bring\Bring\obj\Debug\Bring.csproj.CoreCompileInputs.cache
+D:\laptop data\Bring\Bring\obj\Debug\Bring.csproj.CopyComplete
+D:\laptop data\Bring\Bring\obj\Debug\Bring.dll
+D:\laptop data\Bring\Bring\obj\Debug\Bring.pdb
+D:\laptop data\Bring\Bring\obj\Debug\Bring.csprojAssemblyReference.cache
+D:\laptop data\New folder\Bring\Bring\bin\Bring.dll.config
+D:\laptop data\New folder\Bring\Bring\bin\Bring.dll
+D:\laptop data\New folder\Bring\Bring\bin\Bring.pdb
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\csc.exe
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\csc.exe.config
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\csc.rsp
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\csi.exe
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\csi.exe.config
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\csi.rsp
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\Microsoft.Managed.Core.targets
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\System.AppContext.dll
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\System.Collections.Immutable.dll
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\System.Console.dll
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\System.Globalization.Calendars.dll
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\System.IO.Compression.dll
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\System.IO.FileSystem.dll
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\System.Net.Http.dll
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\System.Net.Sockets.dll
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\System.Reflection.Metadata.dll
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\System.ValueTuple.dll
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\System.Xml.XmlDocument.dll
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\System.Xml.XPath.dll
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\vbc.exe
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\vbc.exe.config
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\vbc.rsp
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\VBCSCompiler.exe
+D:\laptop data\New folder\Bring\Bring\bin\roslyn\VBCSCompiler.exe.config
+D:\laptop data\New folder\Bring\Bring\bin\Antlr3.Runtime.dll
+D:\laptop data\New folder\Bring\Bring\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\laptop data\New folder\Bring\Bring\bin\Microsoft.Web.Infrastructure.dll
+D:\laptop data\New folder\Bring\Bring\bin\Newtonsoft.Json.dll
+D:\laptop data\New folder\Bring\Bring\bin\System.Net.Http.Formatting.dll
+D:\laptop data\New folder\Bring\Bring\bin\System.Web.Helpers.dll
+D:\laptop data\New folder\Bring\Bring\bin\System.Web.Mvc.dll
+D:\laptop data\New folder\Bring\Bring\bin\System.Web.Optimization.dll
+D:\laptop data\New folder\Bring\Bring\bin\System.Web.Razor.dll
+D:\laptop data\New folder\Bring\Bring\bin\System.Web.WebPages.Deployment.dll
+D:\laptop data\New folder\Bring\Bring\bin\System.Web.WebPages.dll
+D:\laptop data\New folder\Bring\Bring\bin\System.Web.WebPages.Razor.dll
+D:\laptop data\New folder\Bring\Bring\bin\WebGrease.dll
+D:\laptop data\New folder\Bring\Bring\bin\System.Net.Http.Formatting.xml
+D:\laptop data\New folder\Bring\Bring\bin\System.Web.Helpers.xml
+D:\laptop data\New folder\Bring\Bring\bin\System.Web.Mvc.xml
+D:\laptop data\New folder\Bring\Bring\bin\System.Web.Optimization.xml
+D:\laptop data\New folder\Bring\Bring\bin\System.Web.Razor.xml
+D:\laptop data\New folder\Bring\Bring\bin\System.Web.WebPages.xml
+D:\laptop data\New folder\Bring\Bring\bin\System.Web.WebPages.Deployment.xml
+D:\laptop data\New folder\Bring\Bring\bin\System.Web.WebPages.Razor.xml
+D:\laptop data\New folder\Bring\Bring\bin\Newtonsoft.Json.xml
+D:\laptop data\New folder\Bring\Bring\bin\Antlr3.Runtime.pdb
+D:\laptop data\New folder\Bring\Bring\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\laptop data\New folder\Bring\Bring\obj\Debug\Bring.csproj.CoreCompileInputs.cache
+D:\laptop data\New folder\Bring\Bring\obj\Debug\Bring.csproj.CopyComplete
+D:\laptop data\New folder\Bring\Bring\obj\Debug\Bring.dll
+D:\laptop data\New folder\Bring\Bring\obj\Debug\Bring.pdb
+D:\laptop data\New folder\Bring\Bring\obj\Debug\Bring.csprojAssemblyReference.cache
+E:\Private Projects\Bring_WebLatest\Bring\bin\Bring.dll.config
+E:\Private Projects\Bring_WebLatest\Bring\bin\Bring.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\Bring.pdb
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\csc.exe
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\csc.exe.config
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\csc.rsp
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\csi.exe
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\csi.exe.config
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\csi.rsp
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\System.AppContext.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\System.Collections.Immutable.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\System.Console.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\System.Globalization.Calendars.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\System.IO.Compression.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\System.IO.FileSystem.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\System.Net.Http.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\System.Net.Sockets.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\System.Reflection.Metadata.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\System.ValueTuple.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\System.Xml.XPath.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\vbc.exe
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\vbc.exe.config
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\vbc.rsp
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\VBCSCompiler.exe
+E:\Private Projects\Bring_WebLatest\Bring\bin\roslyn\VBCSCompiler.exe.config
+E:\Private Projects\Bring_WebLatest\Bring\bin\Antlr3.Runtime.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\Microsoft.Web.Infrastructure.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\Newtonsoft.Json.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\System.Net.Http.Formatting.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\System.Web.Cors.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\System.Web.Helpers.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\System.Web.Http.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\System.Web.Http.WebHost.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\System.Web.Mvc.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\System.Web.Optimization.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\System.Web.Razor.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\System.Web.WebPages.Deployment.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\System.Web.WebPages.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\System.Web.WebPages.Razor.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\WebGrease.dll
+E:\Private Projects\Bring_WebLatest\Bring\bin\System.Net.Http.Formatting.xml
+E:\Private Projects\Bring_WebLatest\Bring\bin\System.Web.Http.xml
+E:\Private Projects\Bring_WebLatest\Bring\bin\System.Web.Http.WebHost.xml
+E:\Private Projects\Bring_WebLatest\Bring\bin\System.Web.Helpers.xml
+E:\Private Projects\Bring_WebLatest\Bring\bin\System.Web.Mvc.xml
+E:\Private Projects\Bring_WebLatest\Bring\bin\System.Web.Optimization.xml
+E:\Private Projects\Bring_WebLatest\Bring\bin\System.Web.Razor.xml
+E:\Private Projects\Bring_WebLatest\Bring\bin\System.Web.WebPages.xml
+E:\Private Projects\Bring_WebLatest\Bring\bin\System.Web.WebPages.Deployment.xml
+E:\Private Projects\Bring_WebLatest\Bring\bin\System.Web.WebPages.Razor.xml
+E:\Private Projects\Bring_WebLatest\Bring\bin\Newtonsoft.Json.xml
+E:\Private Projects\Bring_WebLatest\Bring\bin\Antlr3.Runtime.pdb
+E:\Private Projects\Bring_WebLatest\Bring\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Private Projects\Bring_WebLatest\Bring\obj\Debug\Bring.csproj.CoreCompileInputs.cache
+E:\Private Projects\Bring_WebLatest\Bring\obj\Debug\Bring.csproj.CopyComplete
+E:\Private Projects\Bring_WebLatest\Bring\obj\Debug\Bring.dll
+E:\Private Projects\Bring_WebLatest\Bring\obj\Debug\Bring.pdb

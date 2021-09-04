@@ -1,0 +1,58 @@
+﻿@model IEnumerable<Bring.Models.UserModel>
+
+@{
+    ViewBag.Title = "UserDetail";
+    Layout = "~/Views/Shared/_Layout3.cshtml";
+}
+
+<section class="body">
+    <header class="panel-heading">
+        <div class="panel-actions">
+            <input type="text" id="searchname" name="q" class="form-control" placeholder="Search" />
+        </div>
+
+        <h2 class="panel-title">Striped</h2>
+    </header>
+    <div class="panel-body">
+        <div class="table-responsive">
+            <table class="table table-striped mb-none">
+                
+                    <tr style="font-size:small">
+                        <th>Id</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Company Name</th>
+                        <th>Country</th>
+                        <th>City</th>
+                        <th>State</th>
+                        <th>Street Address</th>
+                        <th>Post Code</th>
+                        <th>Phone No</th>
+                        <th>Email Address</th>
+                    </tr>
+             
+                    @foreach (var item in Model)
+                    {
+                        <tr style="font-size:small">
+                            <td><span id="lblid">@Html.DisplayFor(mod => item.Id)</span></td>
+                            <td>@Html.DisplayFor(mod => item.FirstName)</td>
+                            <td>@Html.DisplayFor(mod => item.LastName)</td>
+                            <td>@Html.DisplayFor(mod => item.CompanyName)</td>
+                            <td>@Html.DisplayFor(mod => item.Country)</td>
+                            <td>@Html.DisplayFor(mod => item.City)</td>
+                            <td>@Html.DisplayFor(mod => item.State)</td>
+                            <td>@Html.DisplayFor(mod => item.Address)</td>
+                            <td>@Html.DisplayFor(mod => item.PostCode)</td>
+                            <td>@Html.DisplayFor(mod => item.PhoneNo)</td>
+                            <td>@Html.DisplayFor(mod => item.Email)</td>
+
+                        </tr>
+                    }
+                   
+            </table>
+        </div>
+    </div>
+</section>
+
+
+

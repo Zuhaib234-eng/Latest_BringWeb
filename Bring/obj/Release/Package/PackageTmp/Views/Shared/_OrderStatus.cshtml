@@ -1,0 +1,93 @@
+﻿@model Bring.Models.OrdersModel
+
+
+<div>
+    <div class="modal-header" style="border-bottom: 1px solid white;">
+        <h3 class="modal-title" id="exampleModalLabel">Delivery Status</h3>
+        <button type="button" class="close" data-dismiss="modal" style="font-size: 30px;" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+    </div>
+    <div class="modal-body">
+        @using (Html.BeginForm("Status", "AdminPanel", FormMethod.Post))
+        {
+            <table>
+                <tbody>
+                    <tr>
+                        <td><h5>Order ID:</h5></td>
+                        <td>
+                            @Html.DropDownListFor(mod => mod.Status, new List<SelectListItem> {
+                       new SelectListItem(){Text="Order Placed",Value="OrderPlaced"},
+                       new SelectListItem(){Text="On The Way",Value="OnTheWay"},
+                       new SelectListItem(){Text="Delivered",Value="Delivered"}
+                   }, new { @class = "ml-4 custom-select mb-3", @style = "width: 200px;" })
+                        </td>
+                        <td>@Html.HiddenFor(mod => mod.FirstName)</td>
+                        <td>@Html.HiddenFor(mod => mod.LastName)</td>
+                        <td>@Html.HiddenFor(mod => mod.PaymentMethod)</td>
+                        <td>@Html.HiddenFor(mod => mod.PhoneNo)</td>
+                        <td>@Html.HiddenFor(mod => mod.PostCode)</td>
+                        <td>@Html.HiddenFor(mod => mod.State)</td>
+                        <td>@Html.HiddenFor(mod => mod.City)</td>
+                        <td>@Html.HiddenFor(mod => mod.StreetAdress)</td>
+                        <td>@Html.HiddenFor(mod => mod.TotalPrice)</td>
+                        <td>@Html.HiddenFor(mod => mod.UserId)</td>
+                        <td>@Html.HiddenFor(mod => mod.ShoppingCartId)</td>
+                        <td>@Html.HiddenFor(mod => mod.EmailAddress)</td>
+                        <td>@Html.HiddenFor(mod => mod.Date)</td>
+                        <td>@Html.HiddenFor(mod => mod.CouponCode)</td>
+                        <td>@Html.HiddenFor(mod => mod.Country)</td>
+                        <td>@Html.HiddenFor(mod => mod.CompanyName)</td>
+                        <td>@Html.HiddenFor(mod => mod.VendorId)</td>
+                        <td>@Html.HiddenFor(mod => mod.VendorName)</td>
+                        <td>@Html.HiddenFor(mod => mod.ProductName)</td>
+                        <td>@Html.HiddenFor(mod => mod.ProductId)</td>
+                        <td>@Html.HiddenFor(mod => mod.Price)</td>
+                        <td>@Html.HiddenFor(mod => mod.Id)</td>
+                        <td><input type="submit" class="btn btn-success mb-3 ml-4" value="Change" /></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+        }
+
+    </div>
+    <br />
+    <br />
+</div>
+@*<div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+    <div>
+        <div class="modal-header" style="border-bottom: 1px solid white;">
+            <h3 class="modal-title" id="exampleModalLabel">Status</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="font-size: 30px;">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <table>
+                <tbody>
+                    <tr>
+                        <td><h5>Order ID:</h5></td>
+                        <td>
+                            <form action="/action_page.php" class="ml-4">
+                                <select name="cars" class="custom-select mb-3" style="width: 200px;">
+                                    <option selected>Country</option>
+                                    <option value="volvo">pakistan</option>
+                                    <option value="fiat">UAE</option>
+                                    <option value="audi">UK</option>
+                                </select>
+                            </form>
+                        </td>
+                        <td><input type="submit" class="btn btn-success mb-3 ml-4" value="Change" /></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+
+        </div>
+    </div>*@

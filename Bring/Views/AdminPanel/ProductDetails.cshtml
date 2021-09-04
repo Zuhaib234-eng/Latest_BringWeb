@@ -1,0 +1,64 @@
+﻿@model IEnumerable<Bring.Models.Product>
+
+@{
+    ViewBag.Title = "ProductDetails";
+    Layout = "~/Views/Shared/_Layout3.cshtml";
+}
+
+<div id='myModal' class='modal'>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div id='myModalContent'></div>
+        </div>
+    </div>
+</div>
+
+<section class="body">
+    <header class="panel-heading">
+        <div class="panel-actions">
+            <input type="text" id="searchname" name="q" class="form-control" placeholder="Search" />
+        </div>
+
+        <h2 class="panel-title">Product Details</h2>
+    </header>
+
+
+    <div class="panel-body">
+        <div class="table-responsive">
+            <table class="table table-striped mb-none">
+
+                <tr style="font-size:small">
+                    <th>Id</th>
+                    <th>ProductName</th>
+                    <th>Description</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Vendor Name</th>
+                </tr>
+
+
+
+                @foreach (var item in Model)
+                {
+                    <tr style="font-size:small">
+                        <td><span id="lblid">@Html.DisplayFor(mod => item.Id)</span></td>
+                        <td>@Html.DisplayFor(mod => item.ProductName)</td>
+                        <td>@Html.DisplayFor(mod => item.Description)</td>
+                        <td>@Html.DisplayFor(mod => item.PhoneNo)</td>
+                        <td>@Html.DisplayFor(mod => item.Email)</td>
+                        <td>@Html.DisplayFor(mod => item.CategoryName)</td>
+                        <td>@Html.DisplayFor(mod => item.Price)</td>
+                        <td>@Html.DisplayFor(mod => item.VendorId)</td>
+                        <td><button class="Addbtn btn btn-success" id="Track" name="Track" data-id="@item.Id">Status</button></td>
+
+                    </tr>
+
+                }
+               
+            </table>
+        </div>
+    </div>
+    
+</section>

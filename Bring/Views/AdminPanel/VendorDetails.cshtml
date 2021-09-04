@@ -1,0 +1,68 @@
+﻿@model IEnumerable<Bring.Models.VendorModel>
+
+@{
+    ViewBag.Title = "OrdersDetail";
+    Layout = "~/Views/Shared/_Layout3.cshtml";
+}
+
+<section class="body">
+    <header class="panel-heading">
+        <div class="panel-actions">
+            <input type="text" class="form-control" id="searchname" name="q" placeholder="Search" />
+        </div>
+
+        <h2 class="panel-title">Striped</h2>
+    </header>
+
+
+    <div class="panel-body">
+        <div class="table-responsive">
+            <table class="table table-striped mb-none">
+
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>LastName</th>
+                    <th>PhoneNo</th>
+                    <th>Email</th>
+                    <th>Country</th>
+                    <th>City</th>
+                    <th>Cnic</th>
+                    <th>Address</th>
+                    <th>AdminLock</th>
+                    <th>View</th>
+                </tr>
+
+
+            
+                    @foreach (var item in Model)
+                    {
+                    <tr style="font-size:small;">
+                        <td><span id="lblid">@Html.DisplayFor(mod => item.Id)</span></td>
+                        <td >@Html.DisplayFor(mod => item.Name)</td>
+                        <td>@Html.DisplayFor(mod => item.LastName)</td>
+                        <td>@Html.DisplayFor(mod => item.PhoneNo)</td>
+                        <td>@Html.DisplayFor(mod => item.Email)</td>
+                        <td>@Html.DisplayFor(mod => item.Country)</td>
+                        <td>@Html.DisplayFor(mod => item.City)</td>
+                        <td>@Html.DisplayFor(mod => item.Cnic)</td>
+                        <td>@Html.DisplayFor(mod => item.Address)</td>
+                        <td>@Html.DisplayFor(mod => item.AdminLock)</td>
+                        <td class="action">
+                            @Html.ActionLink(".", "ViewProfile", "AdminPanel", new { id = item.Id }, new { @class = "fa fa-pencil" })
+                        </td>
+                    </tr>
+
+
+                        }
+
+
+                    
+
+
+
+                </table>
+        </div>
+    </div>
+    
+</section>

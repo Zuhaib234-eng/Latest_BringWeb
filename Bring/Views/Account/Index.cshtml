@@ -1,0 +1,140 @@
+﻿@model Bring.Models.UserModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<main id="content" role="main">
+    <!-- breadcrumb -->
+    <div class="bg-gray-13 bg-md-transparent">
+        <div class="container">
+            <!-- breadcrumb -->
+            <div class="my-md-3">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-3 flex-nowrap flex-xl-wrap overflow-auto overflow-xl-visble">
+                        <li class="breadcrumb-item flex-shrink-0 flex-xl-shrink-1"><a href="../home/index.html">Home</a></li>
+                        <li class="breadcrumb-item flex-shrink-0 flex-xl-shrink-1 active" aria-current="page">My Account</li>
+                    </ol>
+                </nav>
+            </div>
+            <!-- End breadcrumb -->
+        </div>
+    </div>
+    <!-- End breadcrumb -->
+
+    <div class="container">
+        <div class="mb-4">
+            <h1 class="text-center">My Account</h1>
+        </div>
+        <div class="my-4 my-xl-8">
+            <div class="row">
+                <div class="col-md-8" style="left: 18%;">
+                    <!-- Title -->
+                    <div class="border-bottom border-color-1 mb-6">
+                        <h3 class="d-inline-block section-title mb-0 pb-2 font-size-26">Profile</h3>
+                    </div>
+                    <!-- End Title -->
+                    
+                        <!-- Form Group -->
+
+                        @using (Html.BeginForm("Index", "Account", FormMethod.Post))
+                        {
+                <div class="js-form-message form-group">
+                    <label class="form-label" for="signinSrEmailExample3">
+                        Username
+                        <span class="text-danger">*</span>
+                    </label>
+
+                    @Html.TextBoxFor(mod => mod.FirstName, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(mod => mod.FirstName, "", new { @class = "text-danger" })
+                    <div class="js-form-message form-group">
+                        <label class="form-label" for="signinSrEmailExample3">
+                            Email address
+                            <span class="text-danger">*</span>
+                        </label>
+                        @Html.TextBoxFor(mod => mod.Email, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(mod => mod.Email, "", new { @class = "text-danger" })
+                    </div>
+                    <!-- End Form Group -->
+                    <!-- Form Group -->
+                    <div class="js-form-message form-group">
+                        <label class="form-label" for="signinSrPasswordExample2">Password <span class="text-danger">*</span></label>
+                        @Html.TextBoxFor(mod => mod.Password, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(mod => mod.Password, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="js-form-message form-group">
+                        <label class="form-label">
+                            Last Name
+                            <span class="text-danger">*</span>
+                        </label>
+                        @Html.TextBoxFor(mod => mod.LastName, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(mod => mod.LastName, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="js-form-message form-group">
+                        <label class="form-label">
+                            Country
+                            <span class="text-danger">*</span>
+                        </label>
+                        @Html.TextBoxFor(mod => mod.Country, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(mod => mod.Country, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="js-form-message form-group">
+                        <label class="form-label">
+                            Street Address
+                            <span class="text-danger">*</span>
+                        </label>
+                        @Html.TextBoxFor(mod => mod.Address, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(mod => mod.Address, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="js-form-message form-group">
+                        <label class="form-label">
+                            City
+                            <span class="text-danger">*</span>
+                        </label>
+                        @Html.TextBoxFor(mod => mod.City, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(mod => mod.City, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="js-form-message form-group">
+                        <label class="form-label">
+                            State
+                            <span class="text-danger">*</span>
+                        </label>
+                        @Html.TextBoxFor(mod => mod.State, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(mod => mod.State, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="js-form-message form-group">
+                        <label class="form-label">
+                            Post Code
+                            <span class="text-danger">*</span>
+                        </label>
+                        @Html.TextBoxFor(mod => mod.PostCode, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(mod => mod.PostCode, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="js-form-message form-group">
+                        <label class="form-label">
+                            Phone No
+                            <span class="text-danger">*</span>
+                        </label>
+                        @Html.TextBoxFor(mod => mod.PhoneNo, new { @class = "form-control" })
+                    </div>@Html.ValidationMessageFor(mod => mod.PhoneNo, "", new { @class = "text-danger" })
+
+
+
+
+                    <!-- Button -->
+                    <div class="mb-1">
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-primary-dark-w px-5">Edit</button>
+                        </div>
+
+                    </div>
+                    <!-- End Button -->
+
+                </div>
+                        }
+
+            </div>
+        </div>
+    </div>
+</main>
+

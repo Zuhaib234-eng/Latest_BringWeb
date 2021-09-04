@@ -1,0 +1,53 @@
+﻿@model Bring.Models.Product
+
+
+
+<div>
+    <div class="modal-header" style="border-bottom: 1px solid white;">
+        <h3 class="modal-title" id="exampleModalLabel">Product Status</h3>
+        <button type="button" class="close" data-dismiss="modal" style="font-size: 30px;" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+    </div>
+    <div class="modal-body">
+        @using (Html.BeginForm("ProductStatus", "AdminPanel", FormMethod.Post))
+        {
+            <table>
+                <tbody>
+                    <tr>
+                        <td><h5>Product Status : </h5></td>
+                        <td>
+                            @Html.DropDownListFor(mod => mod.ProductStatus, new List<SelectListItem> {
+                       new SelectListItem(){Text="Featured",Value="Featured"},
+                       new SelectListItem(){Text="Normal",Value="Normal"},
+                       
+                   }, new { @class = "ml-4 custom-select mb-3", @style = "width: 200px;" })
+                        </td>
+                        <td>@Html.HiddenFor(mod => mod.ProductName)</td>
+                        <td>@Html.HiddenFor(mod => mod.Price)</td>
+                        <td>@Html.HiddenFor(mod => mod.PhoneNo)</td>
+                        <td>@Html.HiddenFor(mod => mod.VendorId)</td>
+                        <td>@Html.HiddenFor(mod => mod.ImageName3)</td>
+                        <td>@Html.HiddenFor(mod => mod.ImageName2)</td>
+                        <td>@Html.HiddenFor(mod => mod.ImageName)</td>
+                        <td>@Html.HiddenFor(mod => mod.ImageData)</td>
+                        <td>@Html.HiddenFor(mod => mod.ImageData2)</td>
+                        <td>@Html.HiddenFor(mod => mod.ImageData3)</td>
+                        <td>@Html.HiddenFor(mod => mod.ImageContentType3)</td>
+                        <td>@Html.HiddenFor(mod => mod.ImageContentType2)</td>
+                        <td>@Html.HiddenFor(mod => mod.ImageContentType)</td>
+                        <td>@Html.HiddenFor(mod => mod.Email)</td>
+                        <td>@Html.HiddenFor(mod => mod.Description)</td>
+                        <td>@Html.HiddenFor(mod => mod.CategoryName)</td>
+                        <td>@Html.HiddenFor(mod => mod.Id)</td>
+                        <td><input type="submit" class="btn btn-success mb-3 ml-4" value="Change" /></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+        }
+
+    </div>
+    <br />
+    <br />
+</div>

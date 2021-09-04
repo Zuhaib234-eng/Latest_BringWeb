@@ -1,0 +1,112 @@
+﻿@model Bring.Models.Product
+@{
+    ViewBag.Title = "EditProduct";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+
+<header class="panel-heading">
+    <div class="panel-actions">
+
+    </div>
+
+    <h2 class="panel-title">Edit Product</h2>
+</header>
+<div class="panel-body">
+    @using (Html.BeginForm("EditProduct", "Vendor", FormMethod.Post))
+    {
+        <div class="form-group">
+            <label class="col-md-3 control-label" for="inputReadOnly">First Name : </label>
+            <div class="col-md-6">
+                @Html.TextBoxFor(mod => mod.ProductName, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-3 control-label" for="inputReadOnly">Description : </label>
+            <div class="col-md-6">
+                @Html.TextBoxFor(mod => mod.Description, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-3 control-label" for="inputReadOnly">Email : </label>
+            <div class="col-md-6">
+                @Html.TextBoxFor(mod => mod.Email, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-3 control-label" for="inputReadOnly">Phone No : </label>
+            <div class="col-md-6">
+                @Html.TextBoxFor(mod => mod.PhoneNo, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-3 control-label" for="inputReadOnly">Product Stock : </label>
+            <div class="col-md-6">
+                @Html.TextBoxFor(mod => mod.ProductStock, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-3 control-label" for="inputReadOnly">Price : </label>
+            <div class="col-md-6">
+
+                @Html.TextBoxFor(mod => mod.Price, new { @class = "form-control" })
+            </div>
+        </div>
+        @Html.HiddenFor(mod => mod.ProductStatus);
+        <div class="form-group">
+
+            <div class="col-md-6">
+                <button type="submit" class="col-md-3 btn btn-success">Save</button>
+            </div>
+        </div>
+
+    }
+
+</div>
+<style>
+    .btn-success {
+        position: relative;
+        left: 80%;
+    }
+</style>
+
+<div class="successmsg" style="display:none;">
+    @ViewBag.msg
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="~/Content/PopUp/notiflix-aio-2.7.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $.ajax({
+            type: "POST",
+            url: '/Vendor/SetSuccessEmpty',
+            contentType: "application/json; charset=utf-8",
+            success: function (r) {
+            }
+        });
+        var msg = $(".successmsg").text().trim();
+        console.log(msg);
+        if (msg == 'success') {
+            Notiflix.Report.Success();
+            $(".notiflix-report-title").text("Product edited");
+            $(".notiflix-report-message").text("");
+            $(".notiflix-report-overlay").css({ "background": "rgba(255,255,255, 0.7)", "animation-duration": "360ms;" });
+            $("#NXReportButton").hide();
+            mytimer();
+        }
+
+        var timeleft = 1;
+        function mytimer() {
+            var downloadTimer = setInterval(function () {
+                if (timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    $("#NotiflixReportWrap").fadeOut();
+
+                } else {
+
+                }
+                timeleft -= 1;
+            }, 1000);
+        }
+    });
+</script>

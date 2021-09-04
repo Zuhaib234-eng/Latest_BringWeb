@@ -1,0 +1,91 @@
+﻿@model IEnumerable<Bring.Models.OrdersModel>
+
+
+@{
+    ViewBag.Title = "OrdersDetail";
+    Layout = "~/Views/Shared/_Layout3.cshtml";
+}
+
+
+<div id='myModal' class='modal'>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div id='myModalContent'></div>
+
+        </div>
+    </div>
+</div>
+
+<section class="body">
+    <header class="panel-heading">
+        <div class="panel-actions">
+            <input type="text" class="form-control" id="searchname" name="q" placeholder="Search" />
+        </div>
+
+        <h2 class="panel-title">Orders Details</h2>
+    </header>
+    <div class="panel-body">
+        <div class="table-responsive">
+            <table class="table table-striped mb-none">
+
+                <tr style="font-size:small">
+                    <th>Id</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Company Name</th>
+                    <th>Country</th>
+                    <th>City</th>
+                    <th>State</th>
+                    <th>Street Address</th>
+                    <th>Post Code</th>
+                    <th>Phone No</th>
+                    <th>Email Address</th>
+                    <th>Payment Method</th>
+                    <th>Total Price</th>
+                    <th>Status</th>
+                    <th>Date</th>
+                    <th>VendorId</th>
+                    <th>VendorName</th>
+                    <th>ProductId</th>
+                    <th>ProductName</th>
+                    <th>Price</th>
+
+                    <th>Update Status</th>
+
+
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr style="font-size:small">
+                        <td><span id="lblid">@Html.DisplayFor(mod => item.Id)</span></td>
+                        <td>@Html.DisplayFor(mod => item.FirstName)</td>
+                        <td>@Html.DisplayFor(mod => item.LastName)</td>
+                        <td>@Html.DisplayFor(mod => item.CompanyName)</td>
+                        <td>@Html.DisplayFor(mod => item.Country)</td>
+                        <td>@Html.DisplayFor(mod => item.City)</td>
+                        <td>@Html.DisplayFor(mod => item.State)</td>
+                        <td>@Html.DisplayFor(mod => item.StreetAdress)</td>
+                        <td>@Html.DisplayFor(mod => item.PostCode)</td>
+                        <td>@Html.DisplayFor(mod => item.PhoneNo)</td>
+                        <td>@Html.DisplayFor(mod => item.EmailAddress)</td>
+                        <td>@Html.DisplayFor(mod => item.PaymentMethod)</td>
+                        <td>@Html.DisplayFor(mod => item.TotalPrice)</td>
+                        <td>@Html.DisplayFor(mod => item.Status)</td>
+                        <td>@Html.DisplayFor(mod => item.Date)</td>
+                        <td>@Html.DisplayFor(mod => item.VendorId)</td>
+                        <td>@Html.DisplayFor(mod => item.VendorName)</td>
+                        <td>@Html.DisplayFor(mod => item.ProductId)</td>
+                        <td>@Html.DisplayFor(mod => item.ProductName)</td>
+                        <td>@Html.DisplayFor(mod => item.Price)</td>
+                        <td><button type="button" class="Statusbtn btn btn-success" id="Track" name="Track" data-id="@item.Id">Status</button></td>
+                        <td class="actions">@Html.ActionLink(".", "ViewProfile", "AdminPanel", new { id = item.Id }, new { @class = "fa fa-pencil" })</td>
+                    </tr>
+                }
+
+
+
+            </table>
+        </div>
+    </div>
+</section>

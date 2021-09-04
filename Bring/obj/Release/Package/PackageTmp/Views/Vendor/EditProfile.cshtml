@@ -1,0 +1,166 @@
+﻿
+@{
+    ViewBag.Title = "EditProfile";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<header class="panel-heading">
+    <div class="panel-actions">
+
+    </div>
+
+    <h2 class="panel-title">Edit Profile</h2>
+</header>
+<div class="panel-body">
+    <div class="form-horizontal form-bordered">
+        <div class="form-group">
+            <label class="col-md-3 control-label" for="inputReadOnly">First Name : </label>
+            <div class="col-md-6">
+                <input type="text" id="fnametxt" name="fname" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-3 control-label" for="inputReadOnly">LastName : </label>
+            <div class="col-md-6">
+                <input type="text" id="lnametxt" name="fname" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-3 control-label" for="inputReadOnly">Email : </label>
+            <div class="col-md-6">
+                <input type="text" id="Emailtxt" name="fname" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-3 control-label" for="inputReadOnly">Phone Number : </label>
+            <div class="col-md-6">
+                <input type="text" id="Pnumtxt" name="fname" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-3 control-label" for="inputReadOnly">Country : </label>
+            <div class="col-md-6">
+                <input type="text" id="Countrytxt" name="fname" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-3 control-label" for="inputReadOnly">City : </label>
+            <div class="col-md-6">
+                <input type="text" id="Citytxt" name="fname" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-3 control-label" for="inputReadOnly">Cnic : </label>
+            <div class="col-md-6">
+                <input type="text" id="Cnictxt" name="fname" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-3 control-label" for="inputReadOnly">Address : </label>
+            <div class="col-md-6">
+                <input type="text" id="Addresstxt" name="fname" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+
+            <div class="col-md-6">
+                <button type="button" id="savebtn" class="col-md-3 btn btn-success">Save</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<style>
+    .btn-success {
+        position: relative;
+        left: 80%;
+    }
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="~/Content/PopUp/notiflix-aio-2.7.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        GetVendor();
+        function GetVendor() {
+            $.ajax({
+                url: "/Vendor/GetProfile",
+                type: "POST",
+                contentType: "application/json;charset=utf-8",
+                dataType: "json",
+                data: '',//JSON.stringify(customer),
+                success: function (result) {
+                    $("#pre-loader").hide();
+                    if (result.status == 'success') {                             
+                        $("#fnametxt").val(result.Vendor.Name);
+                        $("#lnametxt").val(result.Vendor.LastName);
+                        $("#Emailtxt").val(result.Vendor.Email);
+                        $("#Pnumtxt").val(result.Vendor.PhoneNo);
+                        $("#Countrytxt").val(result.Vendor.Country);
+                        $("#Citytxt").val(result.Vendor.City);
+                        $("#Cnictxt").val(result.Vendor.Cnic);
+                        $("#Addresstxt").val(result.Vendor.Address);
+                    }
+                    else {
+
+                    }
+                },
+                error: function (errormessage) {
+                }
+            });
+
+        }
+
+
+
+
+
+        $("#savebtn").click(function () {
+            var vendor = {
+                Id: 0, Name: $("#fnametxt").val(), LastName: $("#lnametxt").val(), Email: $("#Emailtxt").val(),
+                PhoneNo: $("#Pnumtxt").val(), Country: $("#Country").val(), City: $("#Citytxt").val(), Cnic: $("#Cnictxt").val(),
+                Address: $("#Addresstxt").val()};
+
+            $.ajax({
+                url: "/Vendor/EditProfile",
+                type: "POST",
+                contentType: "application/json;charset=utf-8",
+                dataType: "json",
+                data: JSON.stringify(vendor),
+                success: function (result) {
+                    $("#pre-loader").hide();
+                    if (result.status == 'success') {
+                        Notiflix.Report.Success();
+                        $(".notiflix-report-title").text("Profile edited");
+                        $(".notiflix-report-message").text("");
+                        $(".notiflix-report-overlay").css({ "background": "rgba(255,255,255, 0.7)", "animation-duration": "360ms;" });
+                        $("#NXReportButton").hide();
+                        mytimer();
+                    }
+                    else {
+
+                    }
+                },
+                error: function (errormessage) {
+                }
+            });
+        });
+
+        var timeleft = 1;
+        function mytimer() {
+            var downloadTimer = setInterval(function () {
+                if (timeleft <= 0) {
+                    clearInterval(downloadTimer);
+                    $("#NotiflixReportWrap").fadeOut();
+
+                } else {
+
+                }
+                timeleft -= 1;
+            }, 1000);
+        }
+    });
+</script>
+
+

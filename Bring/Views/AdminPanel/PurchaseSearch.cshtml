@@ -1,0 +1,82 @@
+﻿@model IEnumerable<Bring.Models.PurchaseModel>
+
+@{
+    ViewBag.Title = "PurchaseSearch";
+    Layout = "~/Views/Shared/_Layout3.cshtml";
+}
+
+
+<br />
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div id='myModalContent'></div>
+
+        </div>
+    </div>
+</div>
+<section class="body">
+    <header class="panel-heading">
+        @using (Html.BeginForm("PurchaseSearch", "AdminPanel", FormMethod.Post))
+        {
+            <div class="panel-actions">
+                <div class="row">
+                    <div class="col-sm-7"><input type="text" class="datePicker form-control" id="searchdate" name="searchdate" placeholder="Search" /></div>
+                    <div class="col-sm-2"> <input type="submit" class="btn btn search-field" value="Enter" /></div>
+                </div>
+            </div>
+        }
+
+        <h2 class="panel-title">Purchase&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class=" btn btn-secondary" id="AddExpense"><i class="fa fa-plus"></i> Add Expense</button></h2>
+    </header>
+    <div class="panel-body">
+        <div class="table-responsive">
+            <table class="table table-striped mb-none">
+
+                <tr style="font-size:small">
+                    <th>Id</th>
+                    <th>Supplier Name</th>
+                    <th>Purchase Name</th>
+                    <th>Purchase Quantity</th>
+                    <th>Description</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+
+
+
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr style="font-size:small">
+                        <td>@Html.DisplayFor(mod => item.Id)</td>
+                        <td>@Html.DisplayFor(mod => item.SupplierName)</td>
+                        <td>@Html.DisplayFor(mod => item.PurchaseName)</td>
+                        <td>@Html.DisplayFor(mod => item.Quantity)</td>
+                        <td>@Html.DisplayFor(mod => item.Description)</td>
+                        <td>@Html.DisplayFor(mod => item.Date)</td>
+                        <td>@Html.DisplayFor(mod => item.Amount)</td>
+                        <td><a><i class="EditPurchase fa fa-pencil" data-id="@item.Id"></i></a></td>
+                        <td><a href="@Url.Action("DeletePurchase","AdminPanel", new { id = item.Id })"><i class="fa fa-scissors"></i></a></td>
+                    </tr>
+                }
+
+
+
+
+
+            </table>
+        </div>
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $("#searchdate").datepicker();
+    })
+
+</script>
+
+
