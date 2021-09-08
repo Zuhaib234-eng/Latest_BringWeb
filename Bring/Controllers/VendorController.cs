@@ -1,11 +1,11 @@
-﻿using System;
+﻿using Bring.Models;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Web;
 using System.Web.Mvc;
-using Bring.Models;
 
 namespace Bring.Controllers
 {
@@ -115,8 +115,8 @@ namespace Bring.Controllers
         public ActionResult GetProfile()
         {
             HttpResponseMessage response = GlobalVariable.WebApiClient.GetAsync("Vendor/" + Session["LoginUser"].ToString()).Result;
-            var data = response.Content.ReadAsAsync<VendorModel>().Result;            
-            return Json(new { status = "success",Vendor=data }, JsonRequestBehavior.AllowGet);
+            var data = response.Content.ReadAsAsync<VendorModel>().Result;
+            return Json(new { status = "success", Vendor = data }, JsonRequestBehavior.AllowGet);
 
         }
         [HttpPost]
@@ -150,7 +150,7 @@ namespace Bring.Controllers
         public ActionResult Logout()
         {
             Session.Remove("LoginUser");
-            return RedirectToAction("Index","Index");
+            return RedirectToAction("Index", "Index");
         }
     }
 }
